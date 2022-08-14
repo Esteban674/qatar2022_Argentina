@@ -34,14 +34,15 @@
             <!--Datos personales-->
             <fieldset>
                 <legend>Tus datos personales</legend>
+                <br>
                 <label for="nombre">Nombre:</label>
-                <input type="text" name="nombre">
+                <input type="text" name="nombre" placeholder="Escribe tu nombre">
                 <br><br>
                 <label for="apellido">Apellido:</label>
-                <input type="text" name="nombre">
+                <input type="text" name="nombre" placeholder="Escribe tu apellido">
                 <br><br>
                 <label for="e-mail">E-mail:</label>
-                <input type="email" name="e-mail">
+                <input type="email" name="e-mail" placeholder="Ingresa tu e-mail">
                 <br><br>
                 <label for="genero">Genero:</label>
                 <label for="genero">Masculino</label>
@@ -110,15 +111,19 @@
             </fieldset>
             <br>
             <!--Comentarios-->
-            <label for="comentarios">Comentarios:</label>
-            <br>
-            <textarea name="comentarios" cols="98" rows="5"></textarea>
-            <br>
+            <fieldset>
+                <legend>Comentarios</legend>
+                <label for="comentarios">Déjamos tu opinión sobre el sitio y comparte con nosotros tus espectativas para este mundial:</label>
+                <br>
+                <textarea name="comentarios" cols="98" rows="5"></textarea>
+                <br>
+            </fieldset>
             <input type="checkbox" name="acepta-mail" value="1">
-            <Label>Acepto recibir noticias e información en mi correo electrónico</Label>
+            <Label>Acepto recibir noticias e información en mi correo electrónico.</Label>
             <br><br>
             <input type="submit" value="Enviar">
             <input type="reset" value="Restablecer">
+            
         </form>
         
     </main>
