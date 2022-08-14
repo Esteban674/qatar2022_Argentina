@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Argentina a Qatar 2022</title>
+</head>
+<body>
+    <!--Pagina principal-->
+    <header>
+        <!--Tengo que agregar un logo-->
+
+        <!--Titulo en Header-->
+        <h1>Argentina a Qatar 2022</h1>
+        <!--Menu-->
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="/pages/fixture.html">Fixture</a></li>
+                <li><a href="/pages/seleccion.html">Nuestra Selección</a></li>
+                <li><a href="/pages/pelota.html">Pelota</a></li>
+                <li><a href="/pages/mascota.html">Mascota</a></li>
+                <li><a href="/pages/estadios.html">Estadios</a></li>
+                <li><a href="/pages/contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <hr>
+    <main>
+        <h2>Contacto</h2>
+        <!--Forumlario de contacto -->
+        <form method="get">
+            <!--Datos personales-->
+            <fieldset>
+                <legend>Tus datos personales</legend>
+                <label for="nombre">Nombre:</label>
+                <input type="text" name="nombre">
+                <br><br>
+                <label for="apellido">Apellido:</label>
+                <input type="text" name="nombre">
+                <br><br>
+                <label for="e-mail">E-mail:</label>
+                <input type="email" name="e-mail">
+                <br><br>
+                <label for="genero">Genero:</label>
+                <label for="genero">Masculino</label>
+                <input type="radio" value="M" name="genero">
+                <label for="genero">Femenino</label>
+                <input type="radio" value="F" name="genero">
+                <label for="genero">Otro</label>
+                <input type="radio" value="O" name="genero">
+                <label for="genero">Prefiero no decir</label>
+                <input type="radio" value="PND" name="genero">
+                <br>
+            </fieldset>
+                <br>
+            <!--Jugadores preferidos-->
+            <fieldset>
+                <legend>Dinos cuales son tus jugadores preferidos</legend>
+                <!--Delanteros-->
+                <label for="delantero">Delantero:</label>
+                <select name="delantero">
+                    <option value="Ninguno">Ninguno</option>
+                    <option value="Messi">Leonel Messi</option>
+                    <option value="Martinez">Lautaro Martinez</option>
+                    <option value="Dybala">Paulo Dybala</option>
+                    <option value="Álvarez">Julián Álvarez</option>
+                    <option value="JCorrea">Joaquín Correa</option>
+                    <option value="González">Nicolás González</option>
+                    <option value="ACorrea">Ángel Correa</option>
+                </select>
+                <!--Mediocampistas-->
+                <label for="mediocampista">Mediocampista:</label>
+                <select name="mediocampista">
+                    <option value="Ninguno">Ninguno</option>
+                    <option value="Rodriguez">Guido Rodríguez</option>
+                    <option value="MacAllister">Alexis Mac Allister</option>
+                    <option value="DePaul">Rodrigo De Paul</option>
+                    <option value="Palacios">Exequiel Palacios</option>
+                    <option value="LoCelso">Giovani Lo Celso</option>
+                    <option value="Gomez">Alejandro Gómez</option>
+                    <option value="DiMaria">Ángel Di María</option>
+                </select>
+                <!--Defensores-->
+                <label for="defensor">Defensor:</label>
+                <select name="defensor">
+                    <option value="Ninguno">Ninguno</option>
+                    <option value="Montiel">Gonzalo Montiel</option>
+                    <option value="Molina">Nahuel Molina</option>
+                    <option value="Foyth">Juan Foyth</option>
+                    <option value="Pezzella">Germán Pezzella</option>
+                    <option value="Perez">Nehuén Pérez</option>
+                    <option value="Romero">Cristian Romero</option>
+                    <option value="Otamendi">Nicolás Otamendi</option>
+                    <option value="LiMartinez">Lisandro Martínez</option>
+                    <option value="Senesi">Marcos Senesi</option>
+                    <option value="Tagliafico">Nicolás Tagliafico</option>
+                    <option value="Acunia">Marcos Acuña</option>
+                </select>
+                <!--Arqueros-->
+                <label for="arquero">Arquero:</label>
+                <select name="arquero">
+                    <option value="Ninguno">Ninguno</option>
+                    <option value="EMartinez">Emiliano Martínez</option>
+                    <option value="Armani">Franco Armani</option>
+                    <option value="Musso">Juan Musso</option>
+                    <option value="Rulli">Gerónimo Rulli</option>
+                </select>
+            </fieldset>
+            <br>
+            <!--Comentarios-->
+            <label for="comentarios">Comentarios:</label>
+            <br>
+            <textarea name="comentarios" cols="98" rows="5"></textarea>
+            <br>
+            <input type="checkbox" name="acepta-mail" value="1">
+            <Label>Acepto recibir noticias e información en mi correo electrónico</Label>
+            <br><br>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Restablecer">
+        </form>
+        
+    </main>
+    
+    <footer>
+        <p>Derechos Reservados</p>
+        <p>Desarrollado por: <b>Esteban Perea</b></p>
+        <!--Agregar redes sociales -->
+
+    </footer>
+</body>
+</html>
