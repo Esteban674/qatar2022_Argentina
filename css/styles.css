@@ -153,4 +153,10 @@ footer{
     width: 30px;
 }
 
-   
+legend,label{
+    color: #fdf7e4;
+}
+
+label{
+    font-size: 1.5em;
+}
