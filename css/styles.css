@@ -104,6 +104,11 @@ h2 {
     font-size: 3rem;
 }
 
+h3 {
+    color: #9f7b0b;
+    font-size: 1.7rem;
+}
+
 .header-fondo-texto{
     background: url('/images/banner-bandera5.png');
     -webkit-background-clip: text;
@@ -159,4 +164,16 @@ legend,label{
 
 label{
     font-size: 1.5em;
+}
+
+aside{
+    position: absolute;
+    bottom: 80px;
+    right: 0;
+    
+}
+
+.spotify{
+  margin-right: 30px;
+  padding-top: 15px;
 }
