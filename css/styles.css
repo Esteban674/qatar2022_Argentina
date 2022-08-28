@@ -10,7 +10,7 @@ html{
 body{
     font-family: 'Open Sans', sans-serif;
     background-color: #920b38;
-    background-image: url(/images/mosaico_textura.jpg);
+    background-image: url(../images/mosaico_textura.jpg);
     background-repeat: repeat;
 }
 
@@ -132,7 +132,7 @@ h4 {
 }
 
 .header-fondo-texto{
-    background: url('/images/banner-bandera5.png');
+    background: url('../images/banner-bandera5.png');
     -webkit-background-clip: text;
     background-size: 36% 108%;
     -webkit-text-fill-color: transparent;
