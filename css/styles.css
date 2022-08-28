@@ -123,6 +123,11 @@ h2 {
 
 h3 {
     color: #efb810;
+    font-size: 2.5rem;
+}
+
+h4 {
+    color: #efb810;
     font-size: 1.7rem;
 }
 
@@ -240,9 +245,99 @@ aside{
   padding-top: 15px;
 }
 
+/*fixture*/
+#main_fixture{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 80px;
+}
 .fixture{
     width: 90%;
     margin: 20px;
     border-radius:10px;
     box-shadow: 10px 10px 5px 5px rgba(0, 0, 0, 0.2);
 }
+
+/*star-nuestra_seleccion*/
+#main_seleccion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 80px;
+}
+/*end-nuestra_seleccion*/
+
+/*start-pelota*/
+#main_pelota{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 80px;
+    padding-top: 10px;
+}
+
+#main_pelota p{
+    width: 50%;
+    color: #fbefca;
+    font-size: 2rem;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#main_pelota h3{
+
+    margin-top: 30px;
+    padding-bottom: 10px;
+}
+
+#main_pelota ul li{
+    width: 350px;
+    color: #fbefca;
+    font-size: 2rem;
+    padding-top: 20px;
+}
+
+#main_pelota_detalles{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    margin: 20px;
+}
+
+#main_pelota_caracteristicas{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    margin: 20px;
+}
+
+#imagen_pelota{
+    border-radius: 10px;
+    margin-top: 20px;
+    border-radius:10px;
+    box-shadow: 10px 10px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+#imagen_messi_pelota{
+    border-radius: 10px;
+    width: 400px;
+    border-radius:10px;
+    box-shadow: 10px 10px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+#imagen_pelota_copa{
+    border-radius: 10px;
+    width: 350px;
+    border-radius:10px;
+    box-shadow: 10px 10px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+/*end-pelota*/
