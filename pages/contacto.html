@@ -47,23 +47,19 @@
         </nav>
        </div>
     </header>
-    <main>
+    <main id="main_contacto">
         <h2>Contacto</h2>
         <!--Forumlario de contacto -->
         <form method="get">
             <!--Datos personales-->
             <fieldset>
                 <legend>Tus datos personales</legend>
-                <br>
                 <label for="nombre">Nombre:</label>
                 <input type="text" name="nombre" placeholder="Escribe tu nombre">
-                <br><br>
                 <label for="apellido">Apellido:</label>
                 <input type="text" name="apellido" placeholder="Escribe tu apellido">
-                <br><br>
                 <label for="e-mail">E-mail:</label>
                 <input type="email" name="e-mail" placeholder="Ingresa tu e-mail">
-                <br><br>
                 <label for="genero">Genero:</label>
                 <label for="genero">Masculino</label>
                 <input type="radio" value="M" name="genero">
@@ -73,9 +69,7 @@
                 <input type="radio" value="O" name="genero">
                 <label for="genero">Prefiero no decir</label>
                 <input type="radio" value="PND" name="genero">
-                <br>
             </fieldset>
-                <br>
             <!--Jugadores preferidos-->
             <fieldset>
                 <legend>Dinos cuales son tus jugadores preferidos</legend>
@@ -130,18 +124,14 @@
                     <option value="Rulli">Gerónimo Rulli</option>
                 </select>
             </fieldset>
-            <br>
             <!--Comentarios-->
             <fieldset>
                 <legend>Comentarios</legend>
                 <label for="comentarios">Déjamos tu opinión sobre el sitio y comparte con nosotros tus espectativas para este mundial:</label>
-                <br>
-                <textarea name="comentarios" cols="98" rows="5"></textarea>
-                <br>
+                <textarea name="comentarios" cols="60" rows="5"></textarea>
             </fieldset>
             <input type="checkbox" name="acepta-mail" value="1">
             <Label>Acepto recibir noticias e información en mi correo electrónico.</Label>
-            <br><br>
             <input type="submit" value="Enviar">
             <input type="reset" value="Restablecer">
             

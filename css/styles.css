@@ -506,14 +506,14 @@ label{
 
 #imagen_messi_pelota{
     border-radius: 10px;
-    width: 350px;
+    width: 400px;
     border-radius:10px;
     box-shadow: 10px 10px 5px 5px rgba(0, 0, 0, 0.2);
 }
 
 #imagen_pelota_copa{
     border-radius: 10px;
-    width: 350px;
+    width: 400px;
     border-radius:10px;
     box-shadow: 10px 10px 5px 5px rgba(0, 0, 0, 0.2);
 }
@@ -637,6 +637,32 @@ label{
 
 /*end-estadios*/
 
+/*------start-contacto ------*/
+#main_contacto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 80px;
+    padding-top: 10px;
+    width: 80vw;
+}
+#main_contacto fieldset{
+
+    width: 100%;
+    padding: 10px 0px;
+}
+
+#main_contacto label{
+    padding-left: 15px;
+    padding-right: 3px;
+}
+
+#main_contacto textarea{
+    margin: 10px 10px 5px 15px;
+}
+
+/*end-contacto*/
 
 /*-----------------RESPONSIVES---------------------*/
 
@@ -772,6 +798,38 @@ label{
     }
 
     /*end-estadios*/
+    /*------ start pelota ------*/
+    #imagen_messi_pelota{
+        width: 350px;
+    }
+    #imagen_pelota_copa{
+        width: 350px;
+    }
+    #video_pelota{
+        width: 350px;
+    }
+    /*end-pelota*/
+
+    /*------ start mascota ------*/
+    #video_mascota{
+        width: 350px;
+    }
+    /*end-mascota*/
+
+    /*------start-contacto ------*/
+    #main_contacto{
+     
+    }
+    #main_contacto fieldset{
+       
+        width: 320px;
+    }
+    #main_contacto textarea{
+       width: 290px;
+    }
+
+    /*end-contacto*/
+
     }
 
   /*------ Tablet Styles ------*/
@@ -864,18 +922,22 @@ label{
     /*------ start-estadios ------*/
     .card{
         width: 100%;
-        height: 200px;
+        height: auto;
         border-radius:10px 10px 0 0px;
         box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
     }
 
     .card p{
-        padding: 0px 10px 0px 10px;
+        padding: 0px;
         width: 620px;
+        height: auto;
     }
     .card li{
         display: inline;
-        margin: 0px 10px 0px 10px;
+        margin: 0px;
+    }
+    .card ul{
+        margin-bottom: 10px;
     }
 
     .img_estadio{
