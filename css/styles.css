@@ -15,35 +15,18 @@ body{
 }
 
 .container {
-    width: 100%; 
-    height: 100vh;  
-    position: absolute;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas:
+      "header"
+      "main"
+      "footer";
   }
-
-main{
-    margin-top: 80px;
-    margin-bottom: 50px;
-}
-
-@media screen and (max-width:1024px){
-    main{
-        margin-top: 100px;
-        margin-bottom: 50px;
-    }
-} 
-
-@media screen and (max-width:425px){
-    main{
-        margin-top: 130px;
-        margin-bottom: 100px;
-    }
-} 
-    
 
 
 header{
+    grid-area: header;
     position: fixed;
     top: 0;
     background-color: #9f7b0b;
@@ -55,6 +38,15 @@ header{
     justify-content: space-evenly;
     z-index: 1000;
 }
+
+main{
+    grid-area: main;
+    margin-top: 80px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+}
+
 .logo-qatar{
     width: 30px;
     margin-left: 10px;
@@ -65,11 +57,14 @@ header{
 }
 
 .contenedor_main{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: repeat(3, auto);
+    justify-items: center;
+    grid-template-areas: "foto_seleccion foto_seleccion foto_seleccion"
+                         "logo_qatar texto_principal logo_copa"
+                         "spotify spotify spotify"
 }
 
 .contenedor_logo_mas_texto{
@@ -80,13 +75,20 @@ header{
     flex-wrap: wrap;
 }
 
+#contenedor_logo_grande{
+    grid-area: logo_qatar;
+}
+
+#contenedor_logo_copa{
+    grid-area: logo_copa;
+}
 .logo_grande{
     margin: 0 10px;
     height: 20rem;
 }
 
 #contenedor_foto_seleccion{
-    width: 80%;
+    grid-area: foto_seleccion;   
 }
 
 .foto_seleccion{
@@ -95,7 +97,8 @@ header{
     border-radius:10px;
     box-shadow: 10px 10px 5px 5px rgba(0, 0, 0, 0.2);
 }
-.contenedor_texto_princial{
+.contenedor_texto_principal{
+    grid-area: texto_principal;
     padding: 5px 10px;
     max-width: 800px;
 }
@@ -106,13 +109,18 @@ header{
     padding: 5px 0px;
 }
 
-.spotify{
+.contenedor_spotify{
+    grid-area: spotify;
     padding-top: 15px;
     width:100%; 
     height:80;  
     text-align: center;
-  }
+}
 
+#spotify{
+    margin-top: 10px;
+    height:80px;  
+}
 
 .menu{
     display: flex;
@@ -211,6 +219,7 @@ nav ul li:hover > ul {
 
 /*footer*/
 footer{
+    grid-area: footer;
     position: fixed;
     bottom: 0;
     display: flex;
@@ -251,20 +260,81 @@ label{
     font-size: 1.5em;
 }
 
-/*fixture*/
+/*start fixture*/
 #main_fixture{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-bottom: 80px;
+}
+
+#contenedor_fixture{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(3, auto);
+    justify-items: center;
+   /* grid-template-areas: "a b c d"
+                         "e f g h"
+                         "1 2 3 4";*/
+
 }
 .fixture{
-    width: 90%;
-    margin: 20px;
+    width: 280px;
+    margin: 10px;
     border-radius:10px;
     box-shadow: 10px 10px 5px 5px rgba(0, 0, 0, 0.2);
 }
+
+#fix_a{
+    grid-column: 1/2;
+    grid-row: 1/2
+}
+#fix_b{
+    grid-column: 2/3;
+    grid-row: 1/2
+}
+#fix_c{
+    grid-column: 3/4;
+    grid-row: 1/2
+}
+#fix_d{
+    grid-column: 4/5;
+    grid-row: 1/2
+}
+#fix_e{
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+#fix_f{
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+#fix_g{
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+#fix_h{
+    grid-column: 4/5;
+    grid-row: 2/3;
+}
+#fix_1{
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+#fix_2{
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+#fix_3{
+    grid-column: 3/4;
+    grid-row: 3/4;
+}
+#fix_4{
+    grid-column: 4/5;
+    grid-row: 3/4;
+}
+
+/*end fixture*/
 
 /*start-nuestra_seleccion*/
 #main_seleccion{
@@ -509,3 +579,177 @@ label{
 
 /*end-estadios*/
 
+/* Mobile Styles */
+@media only screen and (max-width: 480px) {
+    main{
+        margin-top: 180px;
+        margin-bottom: 90px;
+    }
+    /*start index*/
+    .contenedor_main{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, auto);
+        justify-items: center;
+        grid-template-areas: "foto_seleccion"
+                             "logo_qatar" 
+                             "texto_principal" 
+                             "logo_copa"
+                             "spotify"
+    }
+    header h1{
+        color: #fdf7e4;
+        font-size: 3rem;
+        margin-left: 0px;
+        text-align: center;
+    }
+    /*end index*/
+
+    /*start fixture*/
+    #contenedor_fixture{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(12, auto);
+        justify-items: center;
+    }
+
+    #fix_a{
+        grid-column: 1/2;
+        grid-row: 1/2
+    }
+    #fix_b{
+        grid-column: 1/2;
+        grid-row: 2/3
+    }
+    #fix_c{
+        grid-column: 1/2;
+        grid-row: 3/4
+    }
+    #fix_d{
+        grid-column: 1/2;
+        grid-row: 4/5
+    }
+    #fix_e{
+        grid-column: 1/2;
+        grid-row: 5/6;
+    }
+    #fix_f{
+        grid-column: 1/2;
+        grid-row: 6/7;
+    }
+    #fix_g{
+        grid-column: 1/2;
+        grid-row: 7/8;
+    }
+    #fix_h{
+        grid-column: 1/2;
+        grid-row: 8/9;
+    }
+    #fix_1{
+        grid-column: 1/2;
+        grid-row: 9/10;
+    }
+    #fix_2{
+        grid-column: 1/2;
+        grid-row: 10/11;
+    }
+    #fix_3{
+        grid-column: 1/2;
+        grid-row: 11/12;
+    }
+    #fix_4{
+        grid-column: 1/2;
+        grid-row: 12/13;
+    }
+
+    /*end fixture*/
+    }
+  /* Tablet Styles */
+  @media only screen and (min-width: 481px) and (max-width: 768px) {
+    main{
+        margin-top: 110px;
+    }
+    /*start index*/
+    .contenedor_main{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, auto);
+        justify-items: center;
+        grid-template-areas: "foto_seleccion"
+                             "logo_qatar" 
+                             "texto_principal" 
+                             "logo_copa"
+                             "spotify"
+    }
+    /*end index*/
+
+    /*start fixture*/
+    #contenedor_fixture{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(6, auto);
+        justify-items: center;
+    }
+
+    #fix_a{
+        grid-column: 1/2;
+        grid-row: 1/2
+    }
+    #fix_b{
+        grid-column: 2/3;
+        grid-row: 1/2
+    }
+    #fix_c{
+        grid-column: 1/2;
+        grid-row: 2/3
+    }
+    #fix_d{
+        grid-column: 2/3;
+        grid-row: 2/3
+    }
+    #fix_e{
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+    #fix_f{
+        grid-column: 2/3;
+        grid-row: 3/4;
+    }
+    #fix_g{
+        grid-column: 1/2;
+        grid-row: 4/5;
+    }
+    #fix_h{
+        grid-column: 2/3;
+        grid-row: 4/5;
+    }
+    #fix_1{
+        grid-column: 1/2;
+        grid-row: 5/6;
+    }
+    #fix_2{
+        grid-column: 2/3;
+        grid-row: 5/6;
+    }
+    #fix_3{
+        grid-column: 1/2;
+        grid-row: 6/7;
+    }
+    #fix_4{
+        grid-column: 2/3;
+        grid-row: 6/7;
+    }
+
+    /*end fixture*/
+  }
+  /* Desktop Styles */
+  @media only screen and (min-width: 769px) and (max-width: 1024px){
+    main{
+        margin-top: 110px;
+    }
+  }
+
+  @media only screen and (min-width: 1025px) {
+    main{
+        margin-top: 80px;
+    }
+  }
+  
