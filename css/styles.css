@@ -19,6 +19,7 @@ body{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, auto);
+    justify-items: center;
     grid-template-areas:
       "header"
       "main"
@@ -436,48 +437,65 @@ label{
     align-items: center;
     padding-bottom: 80px;
     padding-top: 10px;
+    width: 80vw;
 }
 
 #main_pelota p{
-    width: 50%;
+    width: 100%;
     color: #fbefca;
     font-size: 2rem;
     padding-top: 20px;
     padding-bottom: 20px;
 }
 
-#main_pelota h3{
+#main_pelota h1{
+   text-align: center;
+}
 
+#main_pelota h2{
+    text-align: center;
+    margin-top: 20px;
+ }
+
+#main_pelota h3{
+    text-align: center;
     margin-top: 30px;
     padding-bottom: 10px;
 }
 
-#main_pelota ul li{
+#main_pelota ul{
+    margin-bottom: 25px;
+    padding: 10px;
     width: 350px;
+}
+
+#main_pelota ul li{
+    width: 100%;
     color: #fbefca;
     font-size: 2rem;
     padding-top: 20px;
 }
 
 #main_pelota_detalles{
-    width: 50%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content:space-evenly;
     margin: 20px;
+    width: 100%;
 }
 
 #main_pelota_caracteristicas{
-    width: 50%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content:space-evenly;
     margin: 20px;
+    width: 100%;
 }
 
 #imagen_pelota{
+    width: 100%;
     border-radius: 10px;
     margin-top: 20px;
     border-radius:10px;
@@ -486,7 +504,7 @@ label{
 
 #imagen_messi_pelota{
     border-radius: 10px;
-    width: 400px;
+    width: 350px;
     border-radius:10px;
     box-shadow: 10px 10px 5px 5px rgba(0, 0, 0, 0.2);
 }
@@ -499,8 +517,8 @@ label{
 }
 
 #video_pelota{
-    width: 750px;
-    height: 450px;
+    margin: 10px;
+    height: 400px;
     border-radius:10px;
     box-shadow: 10px 10px 5px 5px rgba(0, 0, 0, 0.2);
 }
@@ -778,12 +796,18 @@ label{
     }
 
     /*end fixture*/
+    /*------ start-pelota ------*/
+    #main_pelota ul{
+        width: 550px;
+    }
+       /*end-pelota*/
   }
   /*------ Netbook Styles ------*/
   @media only screen and (min-width: 769px) and (max-width: 1024px){
     main{
         margin-top: 110px;
     }
+
   }
 
   /*------ Notebook and Desktop Styles ------*/
@@ -791,5 +815,13 @@ label{
     main{
         margin-top: 80px;
     }
+    /*------ start-pelota ------*/
+    #imagen_pelota{
+        width: 80%;
+    }
+    #main_pelota p{
+        width: 80%;
+    }
+    /*end-pelota*/
   }
   
