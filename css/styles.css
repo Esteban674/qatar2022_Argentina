@@ -74,21 +74,25 @@ header h1{
 h1 {
     color: #efb810;
     font-size: 3.2rem;
+    text-align: center;
 }
 
 h2 {
     color: #efb810;
     font-size: 3rem;
+    text-align: center;
 }
 
 h3 {
     color: #efb810;
     font-size: 2.5rem;
+    text-align: center;
 }
 
 h4 {
     color: #efb810;
     font-size: 1.7rem;
+    text-align: center;
 }
 
 .header-fondo-texto{
@@ -453,12 +457,10 @@ label{
 }
 
 #main_pelota h2{
-    text-align: center;
     margin-top: 20px;
  }
 
 #main_pelota h3{
-    text-align: center;
     margin-top: 30px;
     padding-bottom: 10px;
 }
@@ -532,10 +534,12 @@ label{
     align-items: center;
     padding-bottom: 80px;
     padding-top: 10px;
+    display: flex;
+    width: 80vw;
 }
 
 #main_mascota p{
-    width: 50%;
+    width: 100%;
     color: #fbefca;
     font-size: 2rem;
     padding-top: 20px;
@@ -543,20 +547,20 @@ label{
 }
 
 #la_eeb{
-    width: 50%;
+    width: 100%;
     border-radius:10px;
     box-shadow: 10px 10px 5px 5px rgba(0, 0, 0, 0.2);
 }
 
 #la_eeb2{
-    width: 50%;
+    width: 100%;
     border-radius:10px;
     box-shadow: 10px 10px 5px 5px rgba(0, 0, 0, 0.2);
 }
 
 #video_mascota{
-    width: 750px;
-    height: 450px;
+    margin: 10px;
+    height: 400px;
     border-radius:10px;
     box-shadow: 10px 10px 5px 5px rgba(0, 0, 0, 0.2);
 }
@@ -800,13 +804,23 @@ label{
     #main_pelota ul{
         width: 550px;
     }
-       /*end-pelota*/
+    /*end-pelota*/
+    /*------ start-mascota ------*/
+      #video_mascota{
+        width: 100%;
+    }
+    /*end-mascota*/
   }
   /*------ Netbook Styles ------*/
   @media only screen and (min-width: 769px) and (max-width: 1024px){
     main{
         margin-top: 110px;
     }
+    /*------ start-mascota ------*/
+    #video_mascota{
+        width: 80%;
+    }
+    /*end-mascota*/
 
   }
 
@@ -823,5 +837,18 @@ label{
         width: 80%;
     }
     /*end-pelota*/
+
+    /*------ start-mascota ------*/
+    #la_eeb{
+        width: 80%;
+    }
+    #la_eeb2{
+        width: 80%;
+    }
+    #video_mascota{
+        width: 70%;
+        height: 600px;
+    }
+     /*end-mascota*/
   }
   
