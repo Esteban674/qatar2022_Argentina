@@ -1,3 +1,4 @@
+/*---------- GENERAL --------*/
 * {
     margin: 0px;
     padding: 0px;
@@ -54,72 +55,6 @@ main{
 
 .logo-fifa{
     width: 180px;
-}
-
-.contenedor_main{
-    width: 80%;
-    display: grid;
-    grid-template-columns: 1fr 3fr 1fr;
-    grid-template-rows: repeat(3, auto);
-    justify-items: center;
-    grid-template-areas: "foto_seleccion foto_seleccion foto_seleccion"
-                         "logo_qatar texto_principal logo_copa"
-                         "spotify spotify spotify"
-}
-
-.contenedor_logo_mas_texto{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-#contenedor_logo_grande{
-    grid-area: logo_qatar;
-}
-
-#contenedor_logo_copa{
-    grid-area: logo_copa;
-}
-.logo_grande{
-    margin: 0 10px;
-    height: 20rem;
-}
-
-#contenedor_foto_seleccion{
-    grid-area: foto_seleccion;   
-}
-
-.foto_seleccion{
-    margin: 20px;
-    width: 100%;
-    border-radius:10px;
-    box-shadow: 10px 10px 5px 5px rgba(0, 0, 0, 0.2);
-}
-.contenedor_texto_principal{
-    grid-area: texto_principal;
-    padding: 5px 10px;
-    max-width: 800px;
-}
-.parrafo_principal{
-    color: #fdf7e4;
-    font-size: 2rem;
-    text-align: justify;
-    padding: 5px 0px;
-}
-
-.contenedor_spotify{
-    grid-area: spotify;
-    padding-top: 15px;
-    width:100%; 
-    height:80;  
-    text-align: center;
-}
-
-#spotify{
-    margin-top: 10px;
-    height:80px;  
 }
 
 .menu{
@@ -259,8 +194,80 @@ legend,label{
 label{
     font-size: 1.5em;
 }
+/*end footer*/
 
-/*start fixture*/
+
+/*------ Start Index ------*/
+.contenedor_main{
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: repeat(3, auto);
+    justify-items: center;
+    grid-template-areas: "foto_seleccion foto_seleccion foto_seleccion"
+                         "logo_qatar texto_principal logo_copa"
+                         "spotify spotify spotify"
+}
+
+.contenedor_logo_mas_texto{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#contenedor_logo_grande{
+    grid-area: logo_qatar;
+}
+
+#contenedor_logo_copa{
+    grid-area: logo_copa;
+}
+.logo_grande{
+    margin: 0 10px;
+    height: 20rem;
+}
+
+#contenedor_foto_seleccion{
+    grid-area: foto_seleccion;   
+}
+
+.foto_seleccion{
+    margin: 20px;
+    width: 100%;
+    border-radius:10px;
+    box-shadow: 10px 10px 5px 5px rgba(0, 0, 0, 0.2);
+}
+.contenedor_texto_principal{
+    grid-area: texto_principal;
+    padding: 5px 10px;
+    max-width: 800px;
+}
+.parrafo_principal{
+    color: #fdf7e4;
+    font-size: 2rem;
+    text-align: justify;
+    padding: 5px 0px;
+}
+
+.contenedor_spotify{
+    grid-area: spotify;
+    padding-top: 15px;
+    width:100%; 
+    height:80;  
+    text-align: center;
+}
+
+#spotify{
+    margin-top: 10px;
+    height:80px;  
+}
+
+/*end index*/
+
+
+/*------ start fixture ------*/
 #main_fixture{
     display: flex;
     flex-direction: column;
@@ -273,10 +280,6 @@ label{
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: repeat(3, auto);
     justify-items: center;
-   /* grid-template-areas: "a b c d"
-                         "e f g h"
-                         "1 2 3 4";*/
-
 }
 .fixture{
     width: 280px;
@@ -336,7 +339,7 @@ label{
 
 /*end fixture*/
 
-/*start-nuestra_seleccion*/
+/*------ start-nuestra_seleccion ------*/
 #main_seleccion{
     display: flex;
     flex-direction: column;
@@ -393,7 +396,7 @@ label{
 
 /*end-nuestra_seleccion*/
 
-/*start-pelota*/
+/*------ start-pelota ------*/
 #main_pelota{
     display: flex;
     flex-direction: column;
@@ -471,7 +474,7 @@ label{
 }
 /*end-pelota*/
 
-/*start-mascota*/
+/*------ start-mascota ------*/
 #main_mascota{
     display: flex;
     flex-direction: column;
@@ -510,7 +513,7 @@ label{
 
 /*end-mascota*/
 
-/*start-estadios*/
+/*------ start-estadios ------*/
 #main_estadios{
     display: flex;
     flex-direction: column;
@@ -579,13 +582,16 @@ label{
 
 /*end-estadios*/
 
-/* Mobile Styles */
+
+/*-----------------RESPONSIVES---------------------*/
+
+/*-------Mobile Styles------ */
 @media only screen and (max-width: 480px) {
     main{
         margin-top: 180px;
         margin-bottom: 90px;
     }
-    /*start index*/
+    /*------ start index ------*/
     .contenedor_main{
         grid-template-columns: 1fr;
         grid-template-rows: repeat(5, auto);
@@ -604,7 +610,7 @@ label{
     }
     /*end index*/
 
-    /*start fixture*/
+    /*------ start fixture ------*/
     #contenedor_fixture{
         display: grid;
         grid-template-columns: 1fr;
@@ -663,12 +669,13 @@ label{
 
     /*end fixture*/
     }
-  /* Tablet Styles */
+
+  /*------ Tablet Styles ------*/
   @media only screen and (min-width: 481px) and (max-width: 768px) {
     main{
         margin-top: 110px;
     }
-    /*start index*/
+    /*------ start index ------*/
     .contenedor_main{
         grid-template-columns: 1fr;
         grid-template-rows: repeat(5, auto);
@@ -681,7 +688,7 @@ label{
     }
     /*end index*/
 
-    /*start fixture*/
+    /*------ start fixture ------*/
     #contenedor_fixture{
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -740,13 +747,14 @@ label{
 
     /*end fixture*/
   }
-  /* Desktop Styles */
+  /*------ Netbook Styles ------*/
   @media only screen and (min-width: 769px) and (max-width: 1024px){
     main{
         margin-top: 110px;
     }
   }
 
+  /*------ Notebook and Desktop Styles ------*/
   @media only screen and (min-width: 1025px) {
     main{
         margin-top: 80px;
