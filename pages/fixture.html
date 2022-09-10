@@ -12,6 +12,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&display=swap" rel="stylesheet">
+    <!--AOS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <title>Argentina a Qatar 2022</title>
 </head>
@@ -53,7 +55,7 @@
     </header>
     <main  id="main_fixture">
         <h1>Fixture</h1>
-        <div id="contenedor_fixture">
+        <div id="contenedor_fixture" data-aos="zoom-in" data-aos-duration="2000">
         <!--Imagenes-->
         <img id="fix_a" class="fixture" src="../images/A.jpg" alt="grupo_A">
         <img id="fix_b" class="fixture" src="../images/B.jpg" alt="grupo_B">
@@ -84,5 +86,10 @@
         </div>
     </footer>
     </div>
+    <!--AOS-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

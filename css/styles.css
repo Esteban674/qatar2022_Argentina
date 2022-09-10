@@ -207,6 +207,13 @@ footer{
     padding-right: 10px;
 }
 
+.redes_sociales img{
+    transform: scale(0.8);
+}
+.redes_sociales img:hover{
+    transform: scale(1.1);
+}
+
 .redes_logos{
     width: 30px;
     margin-left: 10px;
@@ -313,6 +320,14 @@ label{
     box-shadow: 10px 10px 5px 5px rgba(0, 0, 0, 0.2);
 }
 
+.fixture:hover{
+    box-shadow: 10px 10px 5px 5px rgba(0, 0, 0, 0.3); 
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.1), rgba(255, 255, 255, 0));
+    transform: scale(1.05);
+    backdrop-filter: blur(1.9px);
+    -webkit-backdrop-filter: blur(1.5px);
+}
+
 #fix_a{
     grid-column: 1/2;
     grid-row: 1/2
@@ -380,9 +395,9 @@ label{
 #main_seleccion h2{
     margin-top: 20px;
     border: solid 1px rgba(152, 152, 152, 0.224);
-    border-radius:16px;
+    border-radius:5px;
     box-shadow: 10px 10px 5px 5px rgba(0, 0, 0, 0.2);
-    background-color: rgba(43, 39, 40, 0.224);
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.2), rgba(255, 255, 255, 0));
     backdrop-filter: blur(1.5px);
     -webkit-backdrop-filter: blur(1.5px);
     width: 70%;
@@ -423,13 +438,21 @@ label{
     color: #fbefca;
     font-size: 1.3rem;
     align-items: center;
-    border: solid 1px rgba(152, 152, 152, 0.224);
+    border: solid 1px rgba(255, 255, 255, 0.14);
     border-radius:16px;
     box-shadow: 10px 10px 5px 5px rgba(0, 0, 0, 0.2);
-    background-color: rgba(43, 39, 40, 0.224);
     backdrop-filter: blur(1.5px);
     -webkit-backdrop-filter: blur(1.5px);
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.2), rgba(255, 255, 255, 0));
 
+}
+
+.card_jugador:hover{
+    box-shadow: 10px 10px 5px 5px rgba(0, 0, 0, 0.3); 
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.1), rgba(255, 255, 255, 0));
+    transform: scale(1.05);
+    backdrop-filter: blur(1.9px);
+    -webkit-backdrop-filter: blur(1.5px);
 }
 
 .img_jugador{
@@ -608,8 +631,8 @@ label{
     color: #fbefca;
     font-size: 1.3rem;
     align-items: center;
-    border: solid 1px rgba(152, 152, 152, 0.224);
-    background-color: rgba(43, 39, 40, 0.224);
+    border: solid 1px rgba(255, 255, 255, 0.14);
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.2), rgba(255, 255, 255, 0));
     border-radius:10px 0px 0 10px;
     box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(1.5px);
