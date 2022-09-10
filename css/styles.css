@@ -52,6 +52,9 @@ main{
 .logo-qatar{
     width: 30px;
     margin-left: 10px;
+    animation-name: animacionLogo;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
 }
 
 .logo-fifa{
@@ -69,30 +72,40 @@ header h1{
     font-size: 4rem;
     margin-left: 10px;
     text-align: center;
+    animation-name: carga-texto;
+    animation-duration: 2s;
 }
 
 h1 {
     color: #efb810;
     font-size: 3.2rem;
     text-align: center;
+    animation-name: carga-texto;
+    animation-duration: 2s;
 }
 
 h2 {
     color: #efb810;
     font-size: 3rem;
     text-align: center;
+    animation-name: carga-texto;
+    animation-duration: 2s;
 }
 
 h3 {
     color: #efb810;
     font-size: 2.5rem;
     text-align: center;
+    animation-name: carga-texto;
+    animation-duration: 2s;
 }
 
 h4 {
     color: #efb810;
     font-size: 1.7rem;
     text-align: center;
+    animation-name: carga-texto;
+    animation-duration: 2s;
 }
 
 .header-fondo-texto{
@@ -100,6 +113,8 @@ h4 {
     -webkit-background-clip: text;
     background-size: 36% 108%;
     -webkit-text-fill-color: transparent;
+    animation-name: carga-texto;
+    animation-duration: 2s;
 }
   
 /* menu */
@@ -174,6 +189,33 @@ nav ul li:hover > ul {
 
 #sub-menu:target .close {
     display: block;
+}
+
+/*Animaciones*/
+@keyframes carga-texto{
+    0% {
+        opacity: 0;
+        left: -10000px;
+    }
+    100% {
+        opacity: 1;
+        left: 0;
+    }
+}
+
+@keyframes animacionLogo{
+	from {
+		-webkit-transform: rotate(0deg);
+        transform: rotateY(0deg);
+	}
+  50%{
+		-webkit-transform: rotate(180deg);
+        transform: rotateY(180deg);
+	} 
+	to {
+		-webkit-transform: rotate(360deg);
+        transform: rotateY(360deg);
+		}
 }
 
 
