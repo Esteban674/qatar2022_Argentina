@@ -133,7 +133,10 @@ nav ul li {
 /* efecto al pasar el ratón por los items del menu */
 nav ul li:hover {
     background:#6f5607;
+    transition: 0.5s;
 }
+
+
 /* menu desplegable */
 nav ul ul {
     display:none;
@@ -156,6 +159,23 @@ nav ul ul a {
 nav ul li:hover > ul {
     display:block;
 }
+
+/*Al hacer clic sobre el enlace que abre el menú éste desaparece*/
+
+.close { 
+    display:none;
+ }
+         
+ #sub-menu:target .open {
+       display: none;
+ }
+
+ /* Al hacer clic sobre el enlace que abre el menú aparece el enlace .close que previamente estaba oculto*/
+
+#sub-menu:target .close {
+    display: block;
+}
+
 
 /*footer*/
 footer{
@@ -669,8 +689,8 @@ label{
 /*-------Mobile Styles------ */
 @media only screen and (max-width: 480px) {
     main{
-        margin-top: 180px;
-        margin-bottom: 90px;
+        margin-top: 200px;
+        margin-bottom: 120px;
     }
     /*------ start index ------*/
     .contenedor_main{
@@ -835,7 +855,8 @@ label{
   /*------ Tablet Styles ------*/
   @media only screen and (min-width: 481px) and (max-width: 768px) {
     main{
-        margin-top: 110px;
+        margin-top: 200px;
+        margin-bottom: 90px;
     }
     /*------ start index ------*/
     .contenedor_main{
@@ -911,6 +932,9 @@ label{
     /*------ start-pelota ------*/
     #main_pelota ul{
         width: 550px;
+    }
+    #video_pelota{
+        width: 100%;
     }
     /*end-pelota*/
     /*------ start-mascota ------*/
