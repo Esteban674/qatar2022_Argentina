@@ -601,7 +601,7 @@ label{
     align-items: center;
     padding-bottom: 80px;
     padding-top: 10px;
-    width: 80vw;
+    width: 100%;
 }
 
 .card{
@@ -609,10 +609,10 @@ label{
     flex-direction: column;
     justify-content: flex-start;
     align-self: flex-start;
-    width: 200px;
+    width: 230px;
     height: 378px;
     color: #fbefca;
-    font-size: 1.3rem;
+    font-size: 0.8rem;
     align-items: center;
     border: solid 1px rgba(255, 255, 255, 0.14);
     background: linear-gradient(135deg, rgba(0, 0, 0, 0.2), rgba(255, 255, 255, 0));
@@ -620,12 +620,13 @@ label{
     box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(1.5px);
     -webkit-backdrop-filter: blur(1.5px);
-    padding: 0 20px;
+    padding: 0 10px;
 }
 
 .card h3{
-    padding: 15px 0px 10px 0px;
+    padding: 10px 0px 5px 0px;
     text-align: center;
+    font-size: 1.5rem;
 }
 
 .card h4{
@@ -639,7 +640,7 @@ label{
 
 
 .img_estadio{
-    width: 700px;
+    width: 100%;
     height: 378px;
     border-radius: 0px 10px 10px 0;
     box-shadow: 10px 10px 5px 5px rgba(0, 0, 0, 0.2);
@@ -654,11 +655,13 @@ label{
 }
 
 .descripcion_estadio{
-    width: 700px;
-    height: 180px;
+    width: 100%;
+    height: auto;
     color: #fbefca;
-    font-size: 1.3rem;
+    font-size: 0.9rem;
     margin-top: 15px;
+    margin-bottom: 20px;
+    text-align: justify;
 }
 
 /*end-estadios*/
@@ -781,16 +784,12 @@ label{
     /*end fixture*/
 
     /*------ start-estadios ------*/
-    #main_estadios{
-        width: 90vw;
-    }
-
+ 
     .card{
-        width: 90%;
+        width: 100%;
         height: auto;
         padding-bottom: 10px;
         border-radius: 10px 10px 0px 0px;
-        position: relative;
         margin-top: 10px;
     }
 
@@ -810,9 +809,10 @@ label{
 
     .img_estadio{
         width: 100%;
-        height: 378px;
+        height: 240px;
         border-radius: 0px 0px 10px 10px;
         box-shadow: 10px 10px 5px 5px rgba(0, 0, 0, 0.2);
+        margin-bottom: 15px;
     }
 
     .card_mas_estadio{
@@ -825,9 +825,11 @@ label{
         height: 100%;
         padding: 0px 10px 0px 10px;
         margin: auto;
+    
     }
 
     /*end-estadios*/
+
     /*------ start pelota ------*/
   
     #video_pelota{
@@ -943,8 +945,10 @@ label{
 
     .card p{
         padding: 0px;
-        width: 620px;
+        width: 100%;
         height: auto;
+        padding-left: 15px;
+        padding-right: 15px;
     }
     .card li{
         display: inline;
@@ -955,13 +959,14 @@ label{
     }
 
     .img_estadio{
+        width: 100%;
         border-radius: 0px 0px 10px 10px;
     }
     /*end-estadios*/
 
   }
   /*------ Netbook Styles ------*/
-  @media only screen and (min-width: 769px) and (max-width: 1024px){
+  @media only screen and (min-width: 768px) and (max-width: 1024px){
     main{
         margin-top: 110px;
     }
@@ -978,7 +983,7 @@ label{
     /*end-mascota*/
     /*------ start-estadios ------*/
     .card{
-        width: 660px;
+        width: 84%;
         height: 200px;
         border-radius:10px 10px 0 0px;
         box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
@@ -986,7 +991,7 @@ label{
 
     .card p{
         padding: 0px 10px 0px 10px;
-        width: 620px;
+        width: 100%;
     }
     .card li{
         display: inline;
@@ -994,6 +999,7 @@ label{
     }
 
     .img_estadio{
+        width: 100%;
         border-radius: 0px 0px 10px 10px;
     }
     /*end-estadios*/
