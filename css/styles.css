@@ -559,20 +559,14 @@ label{
 
 /*------ start-mascota ------*/
 #main_mascota{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     padding-bottom: 80px;
     padding-top: 10px;
-    display: flex;
-    width: 80vw;
 }
 
 #main_mascota p{
     width: 100%;
     color: #fbefca;
-    font-size: 2rem;
+    font-size: 1rem;
     padding-top: 20px;
     padding-bottom: 20px;
 }
@@ -869,21 +863,6 @@ label{
         margin-top: 100px;
         margin-bottom: 130px;
     }
-    /*------ start index ------*/
-    .contenedor_main{
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(5, auto);
-        justify-items: center;
-        grid-template-areas: "foto_seleccion"
-                             "logo_qatar" 
-                             "texto_principal" 
-                             "logo_copa"
-                             "spotify"
-    }
-    .foto_seleccion{
-        width: 100%;
-    }
-    /*end index*/
 
     /*------ start fixture ------*/
     #contenedor_fixture{
