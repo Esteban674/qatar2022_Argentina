@@ -212,41 +212,39 @@ footer{
     grid-area: footer;
     position: fixed;
     bottom: 0;
-    display: flex;
-    flex-wrap: wrap;
     width: 100%;
     background-color: #9f7b0b;
     color: #fbefca;
-    align-items: center;
-    justify-content: space-around;
     z-index: 1000;
+    padding-top: 0.5rem;
 }
 
 .footer__copyright{
+    padding-top: 0.5rem;
     font-size: 0.8rem;
+    text-align: center;
 }
 
 .footer__nombre{
+    padding-top: 0.5rem;
     font-size: 1rem;
     text-align: center;
-    margin: 0 40px 0 40px;
 }
 
 .redes_sociales{
-    padding-top: 5px;
     padding-right: 10px;
+    text-align: center;
+    height:3rem;
 }
 
-.redes_sociales img{
-    transform: scale(0.8);
-}
-.redes_sociales img:hover{
-    transform: scale(1.1);
+.redes_logos:hover{
+    color: #fbefca;
 }
 
 .redes_logos{
-    width: 30px;
-    margin-left: 10px;
+    margin-left: 15px;
+    font-size: 1.8rem;
+    color:#423304;
 }
 
 legend,label{
