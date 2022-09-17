@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--Favicon-->
     <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <!--Archivo de estilos-->
     <link rel="stylesheet" href="../css/styles.css">
     <!--Fuentes de Google-->
@@ -18,42 +20,58 @@
     <title>Argentina a Qatar 2022</title>
 </head>
 <body>
-    <div class="container">
+    <div class="container-fluid">
     <!--Pagina principal-->
-    <header>
-        <div>
-            <!--Logo-->
-           <img class="logo-qatar" src="../images/Qatar2022_73x73.png" alt="Logo_Catar2022" />
-           <img class="logo-fifa" src="../images/fifaWorldCupBlanco.png" alt="Logo_Catar2022" />
-        </div>
-           <!--Titulo en Header-->
-           <h1 class="header-fondo-texto">Argentina a Qatar 2022</h1>
-       <div class="menu">
-        <!--Menu-->
-        <nav>
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="fixture.html">Fixture</a></li>
-                <li><a href="seleccion.html">Nuestra Selección</a></li>
-                <li id="sub-menu">
-                    <div class="control-menu">
-                    <a href="#sub-menu" class="open"><span>Extras</span></a>
-                    <a href="#" class="close"><span>Extras</span></a>
-                     </div>
-                    <!-- start menu desplegable -->
-                    <ul>
-                        <li><a href="pelota.html">Pelota</a></li>
-                        <li><a href="mascota.html">Mascota</a></li>
-                        <li><a href="estadios.html">Estadios</a></li>
-                    </ul>
-                    <!-- end menu desplegable -->
-                </li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-       </div>
-    </header>
-
+    <div class="row">
+        <header class="col-12">
+            <div>
+                <!--Logo-->
+                <img class="logo-qatar" src="../images/Qatar2022_73x73.png" alt="Logo_Catar2022" />
+                <img class="logo-fifa" src="../images/fifaWorldCupBlanco.png" alt="Logo_Catar2022" />
+            </div>
+            <!--Titulo en Header-->
+            <h1 class="header-fondo-texto">Argentina a Qatar 2022</h1>
+            <div class="menu">
+                <!--Menu-->
+                <nav class="navbar navbar-expand-lg">
+                    <div class="container-fluid">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                            <ul class="navbar-nav mt-2">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="fixture.html">Fixture</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="seleccion.html">Nuestra Selección</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        Extras
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="pelota.html">Pelota</a></li>
+                                        <li><a class="dropdown-item" href="mascota.html">Mascota</a></li>
+                                        <li><a class="dropdown-item" href="estadios.html">Estadios</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="contacto.html">Contacto</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+    </div>
     <main id="main_estadios">
         <h1>Estadios Qatar 2022 - "Una fiesta para los sentidos"</h1>
         <!--Estadio Al Bait-->
@@ -267,5 +285,7 @@
     <script>
          AOS.init();
     </script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 </body>
 </html>

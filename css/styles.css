@@ -5,7 +5,7 @@
 }
 
 html{
-    font-size:62.5%;  
+   /* font-size:62.5%;  */
 }
 
 body{
@@ -69,7 +69,8 @@ main{
 
 header h1{
     color: #fdf7e4;
-    font-size: 4rem;
+    font-size: 2.5rem;
+    font-weight: bold;
     margin-left: 10px;
     text-align: center;
     animation-name: carga-texto;
@@ -78,7 +79,7 @@ header h1{
 
 h1 {
     color: #efb810;
-    font-size: 3.2rem;
+    font-size: 2rem;
     text-align: center;
     animation-name: carga-texto;
     animation-duration: 2s;
@@ -86,7 +87,7 @@ h1 {
 
 h2 {
     color: #efb810;
-    font-size: 3rem;
+    font-size: 1.5rem;
     text-align: center;
     animation-name: carga-texto;
     animation-duration: 2s;
@@ -94,7 +95,7 @@ h2 {
 
 h3 {
     color: #efb810;
-    font-size: 2.5rem;
+    font-size: 1.2rem;
     text-align: center;
     animation-name: carga-texto;
     animation-duration: 2s;
@@ -102,7 +103,7 @@ h3 {
 
 h4 {
     color: #efb810;
-    font-size: 1.7rem;
+    font-size: 1rem;
     text-align: center;
     animation-name: carga-texto;
     animation-duration: 2s;
@@ -118,11 +119,48 @@ h4 {
 }
   
 /* menu */
-nav ul{
-    list-style:none;
-    margin:0;
-    padding:0;
+.nav-link{
+    color: #fbefca;
+    font-size: 1.1rem;
 }
+
+.nav-item:hover{
+    background:#6f5607;
+    border-radius: 5px;
+}
+
+.nav-link:focus, .nav-link:hover {
+    color: #fbefca;
+    transition: 0.2s;
+}
+
+.nav-link.active:hover{
+    color: #fbefca;
+}
+
+.dropdown-item{
+    color: #fbefca;
+    padding: 7px 0px 7px 0px;
+    width:auto;
+}
+
+.dropdown-item:hover{
+    background:#6f5607;
+    color: #fbefca;  
+}
+
+.dropdown-menu li:hover{
+    background:#6f5607;
+    border-radius: 5px; 
+}
+
+.dropdown-menu{
+    background-color: #9f7b0b;
+    margin: 0px;
+    padding: 5px 0px 5px 0px;
+    min-width: 7rem;
+}
+
 /* items del menu */
 nav ul li{
     background-color: #9f7b0b;
@@ -132,64 +170,12 @@ nav ul li{
 nav ul a{
     text-decoration: none;
     color: #fbefca;
-    font-size: 2rem;
+    font-size: 1rem;
     margin: 0px 10px;
     font-weight: bold;  
     display: block;
 }
-/* items del menu */
-nav ul li {
-    position: relative;
-    float:left;
-    margin:0;
-    padding:5px 0px;
-    border-radius: 5px;
-}
-/* efecto al pasar el ratón por los items del menu */
-nav ul li:hover {
-    background:#6f5607;
-    transition: 0.5s;
-}
 
-
-/* menu desplegable */
-nav ul ul {
-    display:none;
-    position:absolute;
-    top:100%;
-    left:0;
-    padding:0;
-}
-/* items del menu desplegable */
-nav ul ul li {
-    float:none;
-    width:130px
-}
-/* enlaces de los items del menu desplegable */
-nav ul ul a {
-    line-height:120%;
-    padding:5px 10px;
-}
-/* items del menu desplegable al pasar el ratón */
-nav ul li:hover > ul {
-    display:block;
-}
-
-/*Al hacer clic sobre el enlace que abre el menú éste desaparece*/
-
-.close { 
-    display:none;
- }
-         
- #sub-menu:target .open {
-       display: none;
- }
-
- /* Al hacer clic sobre el enlace que abre el menú aparece el enlace .close que previamente estaba oculto*/
-
-#sub-menu:target .close {
-    display: block;
-}
 
 /*Animaciones*/
 @keyframes carga-texto{
@@ -235,11 +221,11 @@ footer{
 }
 
 .footer__copyright{
-    font-size: 1.2rem;
+    font-size: 0.8rem;
 }
 
 .footer__nombre{
-    font-size: 1.7rem;
+    font-size: 1rem;
     text-align: center;
     margin: 0 40px 0 40px;
 }
@@ -300,7 +286,7 @@ label{
 }
 .logo_grande{
     margin: 0 10px;
-    height: 20rem;
+    height: 14rem;
 }
 
 #contenedor_foto_seleccion{
@@ -320,7 +306,7 @@ label{
 }
 .parrafo_principal{
     color: #fdf7e4;
-    font-size: 2rem;
+    font-size: 1.2rem;
     text-align: justify;
     padding: 5px 0px;
 }
