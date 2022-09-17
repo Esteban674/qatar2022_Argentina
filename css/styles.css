@@ -445,7 +445,7 @@ label{
     width: 270px;
     height: 480px;
     color: #fbefca;
-    font-size: 1.3rem;
+    font-size: 0.7rem;
     align-items: center;
     border: solid 1px rgba(255, 255, 255, 0.14);
     border-radius:16px;
@@ -453,7 +453,9 @@ label{
     backdrop-filter: blur(1.5px);
     -webkit-backdrop-filter: blur(1.5px);
     background: linear-gradient(135deg, rgba(0, 0, 0, 0.2), rgba(255, 255, 255, 0));
-
+}
+.card_jugador p{
+    margin: 0px;
 }
 
 .card_jugador:hover{
@@ -486,22 +488,10 @@ label{
 /*end-nuestra_seleccion*/
 
 /*------ start-pelota ------*/
-#main_pelota{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 80px;
-    padding-top: 10px;
-    width: 80vw;
-}
 
 #main_pelota p{
-    width: 100%;
     color: #fbefca;
-    font-size: 2rem;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    font-size: 1rem;
 }
 
 #main_pelota h1{
@@ -520,30 +510,17 @@ label{
 #main_pelota ul{
     margin-bottom: 25px;
     padding: 10px;
-    width: 350px;
+    margin:10px;
 }
 
 #main_pelota ul li{
     width: 100%;
     color: #fbefca;
-    font-size: 2rem;
-    padding-top: 20px;
-}
-
-#main_pelota_detalles{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content:space-evenly;
-    margin: 20px;
-    width: 100%;
+    font-size: 1rem;
+    padding-top: 15px;
 }
 
 #main_pelota_caracteristicas{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content:space-evenly;
     margin: 20px;
     width: 100%;
 }
@@ -558,21 +535,23 @@ label{
 
 #imagen_messi_pelota{
     border-radius: 10px;
-    width: 400px;
+    width: 100%;
     border-radius:10px;
     box-shadow: 10px 10px 5px 5px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
 }
 
 #imagen_pelota_copa{
     border-radius: 10px;
-    width: 400px;
+    width: 100%;
     border-radius:10px;
     box-shadow: 10px 10px 5px 5px rgba(0, 0, 0, 0.2);
 }
 
 #video_pelota{
     margin: 10px;
-    height: 400px;
+    width: 100%;
+    height: 35rem;
     border-radius:10px;
     box-shadow: 10px 10px 5px 5px rgba(0, 0, 0, 0.2);
 }
@@ -612,7 +591,8 @@ label{
 
 #video_mascota{
     margin: 10px;
-    height: 400px;
+    width: 100%;
+    height: 35rem;
     border-radius:10px;
     box-shadow: 10px 10px 5px 5px rgba(0, 0, 0, 0.2);
 }
@@ -855,20 +835,15 @@ label{
 
     /*end-estadios*/
     /*------ start pelota ------*/
-    #imagen_messi_pelota{
-        width: 350px;
-    }
-    #imagen_pelota_copa{
-        width: 350px;
-    }
+  
     #video_pelota{
-        width: 350px;
+      height: 20rem;
     }
     /*end-pelota*/
 
     /*------ start mascota ------*/
     #video_mascota{
-        width: 350px;
+        height: 20rem;
     }
     /*end-mascota*/
 
@@ -969,11 +944,8 @@ label{
 
     /*end fixture*/
     /*------ start-pelota ------*/
-    #main_pelota ul{
-        width: 550px;
-    }
     #video_pelota{
-        width: 100%;
+        height: 30rem;
     }
     /*end-pelota*/
     /*------ start-mascota ------*/
@@ -1054,14 +1026,6 @@ label{
         margin-top: 120px;
         margin-bottom: 80px;
     }
-    /*------ start-pelota ------*/
-    #imagen_pelota{
-        width: 80%;
-    }
-    #main_pelota p{
-        width: 80%;
-    }
-    /*end-pelota*/
 
     /*------ start-mascota ------*/
     #la_eeb{
