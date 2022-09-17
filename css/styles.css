@@ -262,6 +262,19 @@ label{
     height: 14rem;
 }
 
+.carousel {
+    border-radius: 10px 10px 10px 10px;
+    overflow: hidden;
+    box-shadow: 10px 10px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+
+.carousel-control-next-icon, .carousel-control-prev-icon{
+    background-image: none;
+    font-size: 2.5rem;
+    color: #fdf7e4;
+}
+
 .foto_seleccion{
     width: 100%;
     border-radius:10px;
