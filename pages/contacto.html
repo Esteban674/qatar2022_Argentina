@@ -71,96 +71,149 @@
             </div>
         </header>
     </div>
-    <main id="main_contacto">
+    <main>
+        <div class="container-fluid">
         <h2>Contacto</h2>
         <!--Forumlario de contacto -->
-        <form method="get">
-            <!--Datos personales-->
-            <fieldset>
-                <legend>Tus datos personales</legend>
-                <label for="nombre">Nombre:</label>
-                <input type="text" name="nombre" placeholder="Escribe tu nombre">
-                <label for="apellido">Apellido:</label>
-                <input type="text" name="apellido" placeholder="Escribe tu apellido">
-                <label for="e-mail">E-mail:</label>
-                <input type="email" name="e-mail" placeholder="Ingresa tu e-mail">
-                <label for="genero">Genero:</label>
-                <label for="genero">Masculino</label>
-                <input type="radio" value="M" name="genero">
-                <label for="genero">Femenino</label>
-                <input type="radio" value="F" name="genero">
-                <label for="genero">Otro</label>
-                <input type="radio" value="O" name="genero">
-                <label for="genero">Prefiero no decir</label>
-                <input type="radio" value="PND" name="genero">
-            </fieldset>
-            <!--Jugadores preferidos-->
-            <fieldset>
-                <legend>Dinos cuales son tus jugadores preferidos</legend>
-                <!--Delanteros-->
-                <label for="delantero">Delantero:</label>
-                <select name="delantero">
-                    <option value="Ninguno">Ninguno</option>
-                    <option value="Messi">Lionel Messi</option>
-                    <option value="Martinez">Lautaro Martinez</option>
-                    <option value="Dybala">Paulo Dybala</option>
-                    <option value="Álvarez">Julián Álvarez</option>
-                    <option value="JCorrea">Joaquín Correa</option>
-                    <option value="González">Nicolás González</option>
-                    <option value="ACorrea">Ángel Correa</option>
-                </select>
-                <!--Mediocampistas-->
-                <label for="mediocampista">Mediocampista:</label>
-                <select name="mediocampista">
-                    <option value="Ninguno">Ninguno</option>
-                    <option value="Rodriguez">Guido Rodríguez</option>
-                    <option value="MacAllister">Alexis Mac Allister</option>
-                    <option value="DePaul">Rodrigo De Paul</option>
-                    <option value="Palacios">Exequiel Palacios</option>
-                    <option value="LoCelso">Giovani Lo Celso</option>
-                    <option value="Gomez">Alejandro Gómez</option>
-                    <option value="DiMaria">Ángel Di María</option>
-                    <option value="Paredes">Leandro Paredes</option>
-                </select>
-                <!--Defensores-->
-                <label for="defensor">Defensor:</label>
-                <select name="defensor">
-                    <option value="Ninguno">Ninguno</option>
-                    <option value="Montiel">Gonzalo Montiel</option>
-                    <option value="Molina">Nahuel Molina</option>
-                    <option value="Foyth">Juan Foyth</option>
-                    <option value="Pezzella">Germán Pezzella</option>
-                    <option value="Perez">Nehuén Pérez</option>
-                    <option value="Romero">Cristian Romero</option>
-                    <option value="Otamendi">Nicolás Otamendi</option>
-                    <option value="LiMartinez">Lisandro Martínez</option>
-                    <option value="Senesi">Marcos Senesi</option>
-                    <option value="Tagliafico">Nicolás Tagliafico</option>
-                    <option value="Acunia">Marcos Acuña</option>
-                </select>
-                <!--Arqueros-->
-                <label for="arquero">Arquero:</label>
-                <select name="arquero">
-                    <option value="Ninguno">Ninguno</option>
-                    <option value="EMartinez">Emiliano Martínez</option>
-                    <option value="Armani">Franco Armani</option>
-                    <option value="Musso">Juan Musso</option>
-                    <option value="Rulli">Gerónimo Rulli</option>
-                </select>
-            </fieldset>
-            <!--Comentarios-->
-            <fieldset>
-                <legend>Comentarios</legend>
-                <label for="comentarios">Déjamos tu opinión sobre el sitio y comparte con nosotros tus espectativas para este mundial:</label>
-                <textarea name="comentarios" cols="60" rows="5"></textarea>
-            </fieldset>
-            <input type="checkbox" name="acepta-mail" value="1">
-            <Label>Acepto recibir noticias e información en mi correo electrónico.</Label>
-            <input type="submit" value="Enviar">
-            <input type="reset" value="Restablecer">
-            
-        </form>
+        <form>
+            <div class="row justify-content-center">
+                <div class="col-lg-8 col-md-10 col-sm-12">
+                    <div class="row">
+                        <h3>Tus datos personales</h3>
+                        <div class="col-lg-6 col-md-6 col-sm-12 mb-3">
+                            <label for="formGroupExampleInput" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="formGroupExampleInput" 
+                            placeholder="Ingrese su nombre" name="nombre">
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12 mb-3">
+                            <label for="formGroupExampleInput2" class="form-label">Apellido</label>
+                            <input type="text" class="form-control" id="formGroupExampleInput2"
+                            placeholder="Ingrese su apellido" name="apellido">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6 col-md-12 col-sm-12 mb-3">
+                            <label for="exampleInputEmail1" class="form-label">E-mail</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                                placeholder="Ingrese su e-mail" name="e-mail">
+                        </div>
+                        <div class="col-lg-6 col-md-10 col-sm-12">
+                            <fieldset class="row mb-3">
+                                <legend class="col-form-label col-sm-2 pt-0">Género</legend>
+                                <div class="col-sm-10">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="genero" id="gridRadios1"
+                                                    value="M">
+                                                <label class="form-check-label" for="gridRadios1">
+                                                    Masculino
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="genero" id="gridRadios2"
+                                                    value="F">
+                                                <label class="form-check-label" for="gridRadios2">
+                                                    Femenino
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="form-check disabled">
+                                                <input class="form-check-input" type="radio" name="genero" id="gridRadios3"
+                                                    value="O">
+                                                <label class="form-check-label" for="gridRadios3">
+                                                    Otro
+                                                </label>
+                                            </div>
+                                            <div class="form-check disabled">
+                                                <input class="form-check-input" type="radio" name="genero" id="gridRadios3"
+                                                    value="PND">
+                                                <label class="form-check-label" for="gridRadios3">
+                                                    Prefiero no decir
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </div>
+                    </div>
+                    <h3>Dinos cuales son tus jugadores preferidos</h3>
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
+                            <select class="form-select" aria-label="Default select example" name="delantero">
+                                <option selected>Delantero</option>
+                                <option value="Messi">Lionel Messi</option>
+                                <option value="Martinez">Lautaro Martinez</option>
+                                <option value="Dybala">Paulo Dybala</option>
+                                <option value="Álvarez">Julián Álvarez</option>
+                                <option value="JCorrea">Joaquín Correa</option>
+                                <option value="González">Nicolás González</option>
+                                <option value="ACorrea">Ángel Correa</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
+                            <select class="form-select" aria-label="Default select example" name="mediocampista">
+                                <option selected>Mediocampista</option>
+                                <option value="Rodriguez">Guido Rodríguez</option>
+                                <option value="MacAllister">Alexis Mac Allister</option>
+                                <option value="DePaul">Rodrigo De Paul</option>
+                                <option value="Palacios">Exequiel Palacios</option>
+                                <option value="LoCelso">Giovani Lo Celso</option>
+                                <option value="Gomez">Alejandro Gómez</option>
+                                <option value="DiMaria">Ángel Di María</option>
+                                <option value="Paredes">Leandro Paredes</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
+                            <select class="form-select" aria-label="Default select example" name="defensor">
+                                <option selected>Defensor</option>
+                                <option value="Montiel">Gonzalo Montiel</option>
+                                <option value="Molina">Nahuel Molina</option>
+                                <option value="Foyth">Juan Foyth</option>
+                                <option value="Pezzella">Germán Pezzella</option>
+                                <option value="Perez">Nehuén Pérez</option>
+                                <option value="Romero">Cristian Romero</option>
+                                <option value="Otamendi">Nicolás Otamendi</option>
+                                <option value="LiMartinez">Lisandro Martínez</option>
+                                <option value="Senesi">Marcos Senesi</option>
+                                <option value="Tagliafico">Nicolás Tagliafico</option>
+                                <option value="Acunia">Marcos Acuña</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
+                            <select class="form-select" aria-label="Default select example" name="arquero">
+                                <option selected>Arquero</option>
+                                <option value="EMartinez">Emiliano Martínez</option>
+                                <option value="Armani">Franco Armani</option>
+                                <option value="Musso">Juan Musso</option>
+                                <option value="Rulli">Gerónimo Rulli</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 mb-3 mt-3">
+                            <div class="form-floating">
+                                <textarea class="form-control" placeholder="Comentarios" id="floatingTextarea2"
+                                    style="height: 100px" name="comentarios"></textarea>
+                                <label for="floatingTextarea2">Escribe tus comentarios aquí</label>
+                            </div>
+                        </div>
+                    </div>
         
+
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1" name="acepta-mail" value="1">
+                        <label class="form-check-label" for="exampleCheck1">Acepto recibir noticias e información en mi correo
+                            electrónico.</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary me-3">Enviar</button>
+                    <button type="reset" class="btn btn-secondary">Restablecer</button>
+                </div>
+            </div>
+        </form>
+    </div>
     </main>
 
     <div class="row">
