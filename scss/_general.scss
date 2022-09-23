@@ -1,0 +1,81 @@
+/*---------- GENERAL --------*/
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+:root{
+    --respaldoBackground: #920b38;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--respaldoBackground);
+    background-image: url(../images/mosaico_textura.jpg);
+    background-repeat: repeat;
+}
+
+
+main{
+    margin-top: 80px;
+    margin-bottom: 50px;
+}
+
+h1 {
+    color: $colorTitulo;
+    font-size: 2rem;
+    text-align: center;
+    animation-name: carga-texto;
+    animation-duration: 2s;
+}
+
+h2 {
+    color: $colorTitulo;
+    font-size: 1.5rem;
+    text-align: center;
+    animation-name: carga-texto;
+    animation-duration: 2s;
+}
+
+h3 {
+    color: $colorTitulo;
+    font-size: 1.2rem;
+    text-align: center;
+    animation-name: carga-texto;
+    animation-duration: 2s;
+}
+
+h4 {
+    color: $colorTitulo;
+    font-size: 1rem;
+    text-align: center;
+    animation-name: carga-texto;
+    animation-duration: 2s;
+}
+
+/*Animaciones*/
+@keyframes carga-texto{
+    0% {
+        opacity: 0;
+        left: -10000px;
+    }
+    100% {
+        opacity: 1;
+        left: 0;
+    }
+}
+
+@keyframes animacionLogo{
+	from {
+		-webkit-transform: rotate(0deg);
+        transform: rotateY(0deg);
+	}
+    50%{
+		-webkit-transform: rotate(180deg);
+        transform: rotateY(180deg);
+	} 
+	to {
+		-webkit-transform: rotate(360deg);
+        transform: rotateY(360deg);
+		}
+}

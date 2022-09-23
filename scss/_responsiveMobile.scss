@@ -1,9 +1,33 @@
 /*-------Mobile Styles------ */
 @media only screen and (max-width: 480px) {
     main{
-        margin-top: 200px;
-        margin-bottom: 160px;
+        margin-top: 120px;
+        margin-bottom: 120px;
     }
+    /*------ start header ------*/
+    header{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, auto);
+        justify-items: center;
+        grid-template-areas: "logos logos"
+                             "navmenu titulo" 
+    }
+
+    .grupo_logo{
+        grid-area: logos;
+    }
+
+    .menu{
+        grid-area: navmenu;
+
+    }
+
+    header-fondo-texto{
+            grid-area: titulo;
+    }
+    /*--end header--*/
+
     /*------ start index ------*/
     .contenedor_main{
         grid-template-columns: 1fr;
@@ -22,12 +46,31 @@
     header {
         h1 {
             color: $colorTexto;
-            font-size: 2rem;
+            font-size: 1.5rem;
             margin-left: 0px;
             text-align: center;
         }
     }
     /*end index*/
+
+    /*footer*/
+    footer{
+        padding-top: 0;
+    }
+
+    .footer__copyright{
+        padding-top: 0.2rem;
+        font-size: 0.6rem;
+        margin-bottom: 0.2rem;
+    }
+
+    .footer__nombre{
+        padding-top: 0;
+        font-size: 0.9rem;
+        margin-bottom: 0;
+    }
+
+    /*end footer*/
 
     /*------ start fixture ------*/
     #contenedor_fixture{

@@ -1,6 +1,71 @@
 /*Background*/
 /*Textos*/
-/*variables de Bootstrap*/
+/*---------- GENERAL --------*/
+* {
+  margin: 0px;
+  padding: 0px; }
+
+:root {
+  --respaldoBackground: #920b38; }
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: var(--respaldoBackground);
+  background-image: url(../images/mosaico_textura.jpg);
+  background-repeat: repeat; }
+
+main {
+  margin-top: 80px;
+  margin-bottom: 50px; }
+
+h1 {
+  color: #efb810;
+  font-size: 2rem;
+  text-align: center;
+  animation-name: carga-texto;
+  animation-duration: 2s; }
+
+h2 {
+  color: #efb810;
+  font-size: 1.5rem;
+  text-align: center;
+  animation-name: carga-texto;
+  animation-duration: 2s; }
+
+h3 {
+  color: #efb810;
+  font-size: 1.2rem;
+  text-align: center;
+  animation-name: carga-texto;
+  animation-duration: 2s; }
+
+h4 {
+  color: #efb810;
+  font-size: 1rem;
+  text-align: center;
+  animation-name: carga-texto;
+  animation-duration: 2s; }
+
+/*Animaciones*/
+@keyframes carga-texto {
+  0% {
+    opacity: 0;
+    left: -10000px; }
+  100% {
+    opacity: 1;
+    left: 0; } }
+
+@keyframes animacionLogo {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotateY(0deg); }
+  50% {
+    -webkit-transform: rotate(180deg);
+    transform: rotateY(180deg); }
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotateY(360deg); } }
+
 header {
   grid-area: header;
   position: fixed;
@@ -15,21 +80,21 @@ header {
   z-index: 1000; }
   header h1 {
     color: #fbefca;
-    font-size: 2.4rem;
+    font-size: 2rem;
     font-weight: bold;
     animation-name: carga-texto;
     animation-duration: 2s;
     margin-bottom: 0px; }
 
 .logo-qatar {
-  width: 30px;
+  width: 20px;
   margin-left: 10px;
   animation-name: animacionLogo;
   animation-duration: 5s;
   animation-iteration-count: infinite; }
 
 .logo-fifa {
-  width: 180px; }
+  width: 150px; }
 
 .menu {
   display: flex;
@@ -575,8 +640,22 @@ option {
 /*-------Mobile Styles------ */
 @media only screen and (max-width: 480px) {
   main {
-    margin-top: 200px;
-    margin-bottom: 160px; }
+    margin-top: 120px;
+    margin-bottom: 120px; }
+  /*------ start header ------*/
+  header {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, auto);
+    justify-items: center;
+    grid-template-areas: "logos logos" "navmenu titulo"; }
+  .grupo_logo {
+    grid-area: logos; }
+  .menu {
+    grid-area: navmenu; }
+  header-fondo-texto {
+    grid-area: titulo; }
+  /*--end header--*/
   /*------ start index ------*/
   .contenedor_main {
     grid-template-columns: 1fr;
@@ -587,10 +666,22 @@ option {
     width: 100%; }
   header h1 {
     color: #fbefca;
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin-left: 0px;
     text-align: center; }
   /*end index*/
+  /*footer*/
+  footer {
+    padding-top: 0; }
+  .footer__copyright {
+    padding-top: 0.2rem;
+    font-size: 0.6rem;
+    margin-bottom: 0.2rem; }
+  .footer__nombre {
+    padding-top: 0;
+    font-size: 0.9rem;
+    margin-bottom: 0; }
+  /*end footer*/
   /*------ start fixture ------*/
   #contenedor_fixture {
     display: grid;
@@ -681,7 +772,7 @@ option {
 /*------ Tablet Styles ------*/
 @media only screen and (min-width: 481px) and (max-width: 768px) {
   main {
-    margin-top: 100px;
+    margin-top: 80px;
     margin-bottom: 130px; }
   /*------ start fixture ------*/
   #contenedor_fixture {
@@ -759,7 +850,7 @@ option {
 /*------ Netbook Styles ------*/
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   main {
-    margin-top: 110px; }
+    margin-top: 80px; }
   /*------ start-index ------*/
   .foto_seleccion {
     width: 100%; }
@@ -788,7 +879,7 @@ option {
 /*------ Notebook and Desktop Styles ------*/
 @media only screen and (min-width: 1025px) {
   main {
-    margin-top: 120px;
+    margin-top: 80px;
     margin-bottom: 80px; }
   /*------ start-mascota ------*/
   #la_eeb {
@@ -799,69 +890,3 @@ option {
     width: 70%;
     height: 600px; }
   /*end-mascota*/ }
-
-/*---------- GENERAL --------*/
-* {
-  margin: 0px;
-  padding: 0px; }
-
-:root {
-  --respaldoBackground: #920b38; }
-
-body {
-  font-family: 'Open Sans', sans-serif;
-  background-color: var(--respaldoBackground);
-  background-image: url(../images/mosaico_textura.jpg);
-  background-repeat: repeat; }
-
-main {
-  margin-top: 80px;
-  margin-bottom: 50px; }
-
-h1 {
-  color: #efb810;
-  font-size: 2rem;
-  text-align: center;
-  animation-name: carga-texto;
-  animation-duration: 2s; }
-
-h2 {
-  color: #efb810;
-  font-size: 1.5rem;
-  text-align: center;
-  animation-name: carga-texto;
-  animation-duration: 2s; }
-
-h3 {
-  color: #efb810;
-  font-size: 1.2rem;
-  text-align: center;
-  animation-name: carga-texto;
-  animation-duration: 2s; }
-
-h4 {
-  color: #efb810;
-  font-size: 1rem;
-  text-align: center;
-  animation-name: carga-texto;
-  animation-duration: 2s; }
-
-/*Animaciones*/
-@keyframes carga-texto {
-  0% {
-    opacity: 0;
-    left: -10000px; }
-  100% {
-    opacity: 1;
-    left: 0; } }
-
-@keyframes animacionLogo {
-  from {
-    -webkit-transform: rotate(0deg);
-    transform: rotateY(0deg); }
-  50% {
-    -webkit-transform: rotate(180deg);
-    transform: rotateY(180deg); }
-  to {
-    -webkit-transform: rotate(360deg);
-    transform: rotateY(360deg); } }
