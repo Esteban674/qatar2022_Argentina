@@ -1,11 +1,18 @@
+@import "variables";
+@import "header";
+@import "footer";
+@import "index";
+@import "fixture";
+@import "seleccion";
+@import "pelota";
+@import "mascota";
+@import "estadios";
+@import "contacto";
+
 /*---------- GENERAL --------*/
 * {
     margin: 0px;
     padding: 0px;
-}
-
-html{
-   /* font-size:62.5%;  */
 }
 
 :root{
