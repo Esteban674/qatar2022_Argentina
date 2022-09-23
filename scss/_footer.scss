@@ -28,21 +28,13 @@ footer{
     height:3rem;
 }
 
-.redes_logos:hover{
-    color: #fbefca;
-}
-
 .redes_logos{
     margin-left: 15px;
     font-size: 1.8rem;
     color:#423304;
+    &:hover{
+        color: #fbefca;
+    }
 }
 
-legend,label{
-    color: #fdf7e4;
-}
-
-label{
-    font-size: 1rem;
-}
 /*end footer*/

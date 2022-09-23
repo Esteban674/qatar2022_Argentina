@@ -5,9 +5,13 @@ fieldset{
     padding: 10px 0px;
 }
 
-label{
-    padding-left: 15px;
-    padding-right: 3px;
+legend,label {
+    color: #fdf7e4;
+    label{
+        font-size: 1rem;
+        padding-left: 15px;
+        padding-right: 3px;
+    }
 }
 
 .form-floating label{

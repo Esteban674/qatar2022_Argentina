@@ -122,19 +122,12 @@ footer {
   text-align: center;
   height: 3rem; }
 
-.redes_logos:hover {
-  color: #fbefca; }
-
 .redes_logos {
   margin-left: 15px;
   font-size: 1.8rem;
   color: #423304; }
-
-legend, label {
-  color: #fdf7e4; }
-
-label {
-  font-size: 1rem; }
+  .redes_logos:hover {
+    color: #fbefca; }
 
 /*end footer*/
 /*------ Start Index ------*/
@@ -494,9 +487,12 @@ fieldset {
   width: 100%;
   padding: 10px 0px; }
 
-label {
-  padding-left: 15px;
-  padding-right: 3px; }
+legend, label {
+  color: #fdf7e4; }
+  legend label, label label {
+    font-size: 1rem;
+    padding-left: 15px;
+    padding-right: 3px; }
 
 .form-floating label {
   color: #939393d0; }
