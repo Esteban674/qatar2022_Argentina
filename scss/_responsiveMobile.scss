@@ -19,11 +19,13 @@
         width: 100%;
     }
 
-    header h1{
-        color: #fdf7e4;
-        font-size: 2rem;
-        margin-left: 0px;
-        text-align: center;
+    header {
+        h1 {
+            color: #fdf7e4;
+            font-size: 2rem;
+            margin-left: 0px;
+            text-align: center;
+        }
     }
     /*end index*/
 
@@ -88,27 +90,23 @@
 
     /*------ start-estadios ------*/
 
-    .card{
+    .card {
         width: 100%;
         height: auto;
         padding-bottom: 10px;
         border-radius: 10px 10px 0px 0px;
         margin-top: 10px;
+        h3 {
+            padding: 0px;
+            text-align: center;
+        }
+        h4 {
+            padding: 0px;
+        }
+        p {
+            width: 100%;
+        }
     }
-
-    .card h3{
-        padding: 0px;
-        text-align: center;
-    }
-
-    .card h4{
-        padding: 0px;
-    }
-
-    .card p{
-        width: 100%;
-    }
-
 
     .img_estadio{
         width: 100%;
@@ -127,8 +125,7 @@
         width: 100%;
         height: 100%;
         padding: 0px 10px 0px 10px;
-        margin: auto;
-    
+        margin: auto;  
     }
 
     /*end-estadios*/
@@ -147,17 +144,12 @@
     /*end-mascota*/
 
     /*------start-contacto ------*/
-    #main_contacto{
-    
-    }
     #main_contacto fieldset{
-
         width: 320px;
     }
     #main_contacto textarea{
         width: 290px;
     }
-
     /*end-contacto*/
 
 }
