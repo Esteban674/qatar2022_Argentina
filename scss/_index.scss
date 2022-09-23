@@ -15,7 +15,7 @@
 .carousel-control-next-icon, .carousel-control-prev-icon{
     background-image: none;
     font-size: 2.5rem;
-    color: #fdf7e4;
+    color: $colorTexto;
 }
 
 .foto_seleccion{
@@ -29,7 +29,7 @@
 
 }
 .parrafo_principal{
-    color: #fdf7e4;
+    color: $colorTexto;
     font-size: 1.2rem;
     text-align: justify;
     padding: 5px 0px;

@@ -1,6 +1,6 @@
 /*Background*/
 /*Textos*/
-/*Botones-Radios-Check*/
+/*variables de Bootstrap*/
 header {
   grid-area: header;
   position: fixed;
@@ -14,7 +14,7 @@ header {
   justify-content: space-evenly;
   z-index: 1000; }
   header h1 {
-    color: #fdf7e4;
+    color: #fbefca;
     font-size: 2.4rem;
     font-weight: bold;
     animation-name: carga-texto;
@@ -139,7 +139,7 @@ footer {
 .carousel-control-next-icon, .carousel-control-prev-icon {
   background-image: none;
   font-size: 2.5rem;
-  color: #fdf7e4; }
+  color: #fbefca; }
 
 .foto_seleccion {
   width: 100%;
@@ -151,7 +151,7 @@ footer {
   padding: 5px 10px; }
 
 .parrafo_principal {
-  color: #fdf7e4;
+  color: #fbefca;
   font-size: 1.2rem;
   text-align: justify;
   padding: 5px 0px; }
@@ -480,7 +480,7 @@ fieldset {
   padding: 10px 0px; }
 
 legend, label {
-  color: #fdf7e4; }
+  color: #fbefca; }
   legend label, label label {
     font-size: 1rem;
     padding-left: 15px;
@@ -556,7 +556,6 @@ form h3 {
     box-shadow: 0 0 0 0.15rem rgba(255, 255, 255, 0.254); }
 
 option {
-  background-color: pink;
   color: #fbefca; }
   option:not(checked) {
     background-color: rgba(0, 0, 0, 0.2); }
@@ -587,7 +586,7 @@ option {
   .foto_seleccion {
     width: 100%; }
   header h1 {
-    color: #fdf7e4;
+    color: #fbefca;
     font-size: 2rem;
     margin-left: 0px;
     text-align: center; }
@@ -807,11 +806,11 @@ option {
   padding: 0px; }
 
 :root {
-  --azul: #340b92; }
+  --respaldoBackground: #920b38; }
 
 body {
   font-family: 'Open Sans', sans-serif;
-  background-color: #920b38;
+  background-color: var(--respaldoBackground);
   background-image: url(../images/mosaico_textura.jpg);
   background-repeat: repeat; }
 

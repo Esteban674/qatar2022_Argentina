@@ -2,7 +2,7 @@
 
 #main_pelota {
 	p {
-		color: #fbefca;
+		color: $colorTexto;
 		font-size: 1rem;
 	}
 	h1 {
@@ -21,7 +21,7 @@
 		margin: 10px;
 		li {
 			width: 100%;
-			color: #fbefca;
+			color: $colorTexto;
 			font-size: 1rem;
 			padding-top: 15px;
 		}
