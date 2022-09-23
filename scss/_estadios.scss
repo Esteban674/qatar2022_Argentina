@@ -26,23 +26,19 @@
     backdrop-filter: blur(1.5px);
     -webkit-backdrop-filter: blur(1.5px);
     padding: 0 10px;
+    h3{
+        padding: 10px 0px 5px 0px;
+        text-align: center;
+        font-size: 1.5rem;
+    }
+    h4{
+        padding: 20px 0px 10px 0px;
+    }
+    p{
+        padding: 0px 10px 0px 10px;
+        text-align: justify;
+    }
 }
-
-.card h3{
-    padding: 10px 0px 5px 0px;
-    text-align: center;
-    font-size: 1.5rem;
-}
-
-.card h4{
-    padding: 20px 0px 10px 0px;
-}
-
-.card p{
-    padding: 0px 10px 0px 10px;
-    text-align: justify;
-}
-
 
 .img_estadio{
     width: 100%;
