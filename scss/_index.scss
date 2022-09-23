@@ -1,0 +1,51 @@
+/*------ Start Index ------*/
+
+.logo_grande{
+    margin: 10px;
+    height: 14rem;
+}
+
+.carousel {
+    border-radius: 10px 10px 10px 10px;
+    overflow: hidden;
+    box-shadow: 10px 10px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+
+.carousel-control-next-icon, .carousel-control-prev-icon{
+    background-image: none;
+    font-size: 2.5rem;
+    color: #fdf7e4;
+}
+
+.foto_seleccion{
+    width: 100%;
+    border-radius:10px;
+    box-shadow: 10px 10px 5px 5px rgba(0, 0, 0, 0.2);
+    margin-bottom: 15px;
+}
+.contenedor_texto_principal{
+    padding: 5px 10px;
+
+}
+.parrafo_principal{
+    color: #fdf7e4;
+    font-size: 1.2rem;
+    text-align: justify;
+    padding: 5px 0px;
+}
+
+.contenedor_spotify{
+    grid-area: spotify;
+    padding-top: 15px;
+    width:100%; 
+    height:80;  
+    text-align: center;
+}
+
+#spotify{
+    margin-top: 10px;
+    height:80px;  
+}
+
+/*end index*/

@@ -1,0 +1,48 @@
+/*footer*/
+footer{
+    grid-area: footer;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #9f7b0b;
+    color: #fbefca;
+    z-index: 1000;
+    padding-top: 0.5rem;
+}
+
+.footer__copyright{
+    padding-top: 0.5rem;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+.footer__nombre{
+    padding-top: 0.5rem;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.redes_sociales{
+    padding-right: 10px;
+    text-align: center;
+    height:3rem;
+}
+
+.redes_logos:hover{
+    color: #fbefca;
+}
+
+.redes_logos{
+    margin-left: 15px;
+    font-size: 1.8rem;
+    color:#423304;
+}
+
+legend,label{
+    color: #fdf7e4;
+}
+
+label{
+    font-size: 1rem;
+}
+/*end footer*/

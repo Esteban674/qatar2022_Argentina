@@ -1,0 +1,72 @@
+/*------ start-estadios ------*/
+#main_estadios{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 80px;
+    padding-top: 10px;
+    width: 100%;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-self: flex-start;
+    width: 230px;
+    height: 378px;
+    color: #fbefca;
+    font-size: 0.8rem;
+    align-items: center;
+    border: solid 1px rgba(255, 255, 255, 0.14);
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.2), rgba(255, 255, 255, 0));
+    border-radius:10px 0px 0 10px;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(1.5px);
+    -webkit-backdrop-filter: blur(1.5px);
+    padding: 0 10px;
+}
+
+.card h3{
+    padding: 10px 0px 5px 0px;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.card h4{
+    padding: 20px 0px 10px 0px;
+}
+
+.card p{
+    padding: 0px 10px 0px 10px;
+    text-align: justify;
+}
+
+
+.img_estadio{
+    width: 100%;
+    height: 378px;
+    border-radius: 0px 10px 10px 0;
+    box-shadow: 10px 10px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.card_mas_estadio{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 25px;
+}
+
+.descripcion_estadio{
+    width: 100%;
+    height: auto;
+    color: #fbefca;
+    font-size: 0.9rem;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+/*end-estadios*/

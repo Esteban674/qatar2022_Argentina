@@ -1,0 +1,106 @@
+/*------ Tablet Styles ------*/
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    main{
+        margin-top: 100px;
+        margin-bottom: 130px;
+    }
+
+    /*------ start fixture ------*/
+    #contenedor_fixture{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(6, auto);
+        justify-items: center;
+    }
+
+    #fix_a{
+        grid-column: 1/2;
+        grid-row: 1/2
+    }
+    #fix_b{
+        grid-column: 2/3;
+        grid-row: 1/2
+    }
+    #fix_c{
+        grid-column: 1/2;
+        grid-row: 2/3
+    }
+    #fix_d{
+        grid-column: 2/3;
+        grid-row: 2/3
+    }
+    #fix_e{
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+    #fix_f{
+        grid-column: 2/3;
+        grid-row: 3/4;
+    }
+    #fix_g{
+        grid-column: 1/2;
+        grid-row: 4/5;
+    }
+    #fix_h{
+        grid-column: 2/3;
+        grid-row: 4/5;
+    }
+    #fix_1{
+        grid-column: 1/2;
+        grid-row: 5/6;
+    }
+    #fix_2{
+        grid-column: 2/3;
+        grid-row: 5/6;
+    }
+    #fix_3{
+        grid-column: 1/2;
+        grid-row: 6/7;
+    }
+    #fix_4{
+        grid-column: 2/3;
+        grid-row: 6/7;
+    }
+
+    /*end fixture*/
+    /*------ start-pelota ------*/
+    #video_pelota{
+        height: 30rem;
+    }
+    /*end-pelota*/
+    /*------ start-mascota ------*/
+    #video_mascota{
+        width: 100%;
+    }
+    /*end-mascota*/
+
+    /*------ start-estadios ------*/
+    .card{
+        width: 100%;
+        height: auto;
+        border-radius:10px 10px 0 0px;
+        box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    .card p{
+        padding: 0px;
+        width: 100%;
+        height: auto;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .card li{
+        display: inline;
+        margin: 0px;
+    }
+    .card ul{
+        margin-bottom: 10px;
+    }
+
+    .img_estadio{
+        width: 100%;
+        border-radius: 0px 0px 10px 10px;
+    }
+    /*end-estadios*/
+
+}
