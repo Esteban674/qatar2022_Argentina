@@ -197,13 +197,12 @@ label {
   margin: 10px;
   border-radius: 10px;
   box-shadow: 10px 10px 5px 5px rgba(0, 0, 0, 0.2); }
-
-.fixture:hover {
-  box-shadow: 10px 10px 5px 5px rgba(0, 0, 0, 0.3);
-  background: linear-gradient(135deg, rgba(0, 0, 0, 0.1), rgba(255, 255, 255, 0));
-  transform: scale(1.05);
-  backdrop-filter: blur(1.9px);
-  -webkit-backdrop-filter: blur(1.5px); }
+  .fixture:hover {
+    box-shadow: 10px 10px 5px 5px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.1), rgba(255, 255, 255, 0));
+    transform: scale(1.05);
+    backdrop-filter: blur(1.9px);
+    -webkit-backdrop-filter: blur(1.5px); }
 
 #fix_a {
   grid-column: 1/2;
