@@ -772,12 +772,12 @@ option {
     height: 200px;
     border-radius: 10px 10px 0 0px;
     box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2); }
-  .card p {
-    padding: 0px 10px 0px 10px;
-    width: 100%; }
-  .card li {
-    display: inline;
-    margin: 0px 10px 0px 10px; }
+    .card p {
+      padding: 0px 10px 0px 10px;
+      width: 100%; }
+    .card li {
+      display: inline;
+      margin: 0px 10px 0px 10px; }
   .img_estadio {
     width: 100%;
     border-radius: 0px 0px 10px 10px; }
