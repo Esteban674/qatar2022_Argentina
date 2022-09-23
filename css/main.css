@@ -346,12 +346,11 @@ footer {
   margin-bottom: 25px;
   padding: 10px;
   margin: 10px; }
-
-#main_pelota ul li {
-  width: 100%;
-  color: #fbefca;
-  font-size: 1rem;
-  padding-top: 15px; }
+  #main_pelota ul li {
+    width: 100%;
+    color: #fbefca;
+    font-size: 1rem;
+    padding-top: 15px; }
 
 #main_pelota_caracteristicas {
   margin: 20px;

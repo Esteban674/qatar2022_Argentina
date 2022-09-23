@@ -1,34 +1,31 @@
 /*------ start-pelota ------*/
 
-#main_pelota p{
-    color: #fbefca;
-    font-size: 1rem;
-}
-
-#main_pelota h1{
-    text-align: center;
-}
-
-#main_pelota h2{
-    margin-top: 20px;
-}
-
-#main_pelota h3{
-    margin-top: 30px;
-    padding-bottom: 10px;
-}
-
-#main_pelota ul{
-    margin-bottom: 25px;
-    padding: 10px;
-    margin:10px;
-}
-
-#main_pelota ul li{
-    width: 100%;
-    color: #fbefca;
-    font-size: 1rem;
-    padding-top: 15px;
+#main_pelota {
+	p {
+		color: #fbefca;
+		font-size: 1rem;
+	}
+	h1 {
+		text-align: center;
+	}
+	h2 {
+		margin-top: 20px;
+	}
+	h3 {
+		margin-top: 30px;
+		padding-bottom: 10px;
+	}
+	ul {
+		margin-bottom: 25px;
+		padding: 10px;
+		margin: 10px;
+		li {
+			width: 100%;
+			color: #fbefca;
+			font-size: 1rem;
+			padding-top: 15px;
+		}
+	}
 }
 
 #main_pelota_caracteristicas{
