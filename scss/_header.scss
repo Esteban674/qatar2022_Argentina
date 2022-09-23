@@ -10,11 +10,14 @@ header{
     padding: 5px 5px;
     justify-content: space-evenly;
     z-index: 1000;
-}
-
-main{
-    margin-top: 80px;
-    margin-bottom: 50px;
+    h1{
+        color: #fdf7e4;
+        font-size: 2.4rem;
+        font-weight: bold;
+        animation-name: carga-texto;
+        animation-duration: 2s;
+        margin-bottom: 0px;
+    }
 }
 
 .logo-qatar{
@@ -34,17 +37,6 @@ main{
     align-items: center;
 }
 
-header {
-    h1{
-        color: #fdf7e4;
-        font-size: 2.4rem;
-        font-weight: bold;
-        animation-name: carga-texto;
-        animation-duration: 2s;
-        margin-bottom: 0px;
-    }
-}
-
 .header-fondo-texto{
     background: url('../images/banner-bandera5.png');
     -webkit-background-clip: text;
@@ -55,63 +47,65 @@ header {
 }
 
 /* menu */
-
-.navbar{
-    padding: 0px;
+.navbar {
+	padding: 0px;
 }
-.nav-link{
-    color: #fbefca;
-    font-size: 1.1rem;
+.nav-link {
+	color: #fbefca;
+	font-size: 1.1rem;
+	&:focus {
+		color: #fbefca;
+		transition: 0.2s;
+	}
+	&:hover {
+		color: #fbefca;
+		transition: 0.2s;
+	}
 }
-
-.nav-item:hover{
-    background:#6f5607;
-    border-radius: 5px;
+.nav-item {
+	&:hover {
+		background: #6f5607;
+		border-radius: 5px;
+	}
 }
-
-.nav-link:focus, .nav-link:hover {
-    color: #fbefca;
-    transition: 0.2s;
+.nav-link.active {
+	&:hover {
+		color: #fbefca;
+	}
 }
-
-.nav-link.active:hover{
-    color: #fbefca;
+.dropdown-item {
+	color: #fbefca;
+	padding: 7px 0px 7px 0px;
+	width: auto;
+	&:hover {
+		background: #6f5607;
+		color: #fbefca;
+	}
 }
-
-.dropdown-item{
-    color: #fbefca;
-    padding: 7px 0px 7px 0px;
-    width:auto;
+.dropdown-menu {
+	li {
+		&:hover {
+			background: #6f5607;
+			border-radius: 5px;
+		}
+	}
+	background-color: #9f7b0b;
+	margin: 0px;
+	padding: 5px 0px 5px 0px;
+	min-width: 7rem;
 }
-
-.dropdown-item:hover{
-    background:#6f5607;
-    color: #fbefca;  
-}
-
-.dropdown-menu li:hover{
-    background:#6f5607;
-    border-radius: 5px; 
-}
-
-.dropdown-menu{
-    background-color: #9f7b0b;
-    margin: 0px;
-    padding: 5px 0px 5px 0px;
-    min-width: 7rem;
-}
-
-/* items del menu */
-nav ul li{
-    background-color: #9f7b0b;
-}
-
-/* enlaces del menu */
-nav ul a{
-    text-decoration: none;
-    color: #fbefca;
-    font-size: 1rem;
-    margin: 0px 10px;
-    font-weight: bold;  
-    display: block;
+nav {
+	ul {
+		li {
+			background-color: #9f7b0b;
+		}
+		a {
+			text-decoration: none;
+			color: #fbefca;
+			font-size: 1rem;
+			margin: 0px 10px;
+			font-weight: bold;
+			display: block;
+		}
+	}
 }

@@ -10,10 +10,13 @@ header {
   padding: 5px 5px;
   justify-content: space-evenly;
   z-index: 1000; }
-
-main {
-  margin-top: 80px;
-  margin-bottom: 50px; }
+  header h1 {
+    color: #fdf7e4;
+    font-size: 2.4rem;
+    font-weight: bold;
+    animation-name: carga-texto;
+    animation-duration: 2s;
+    margin-bottom: 0px; }
 
 .logo-qatar {
   width: 30px;
@@ -28,14 +31,6 @@ main {
 .menu {
   display: flex;
   align-items: center; }
-
-header h1 {
-  color: #fdf7e4;
-  font-size: 2.4rem;
-  font-weight: bold;
-  animation-name: carga-texto;
-  animation-duration: 2s;
-  margin-bottom: 0px; }
 
 .header-fondo-texto {
   background: url("../images/banner-bandera5.png");
@@ -52,14 +47,16 @@ header h1 {
 .nav-link {
   color: #fbefca;
   font-size: 1.1rem; }
+  .nav-link:focus {
+    color: #fbefca;
+    transition: 0.2s; }
+  .nav-link:hover {
+    color: #fbefca;
+    transition: 0.2s; }
 
 .nav-item:hover {
   background: #6f5607;
   border-radius: 5px; }
-
-.nav-link:focus, .nav-link:hover {
-  color: #fbefca;
-  transition: 0.2s; }
 
 .nav-link.active:hover {
   color: #fbefca; }
@@ -68,26 +65,22 @@ header h1 {
   color: #fbefca;
   padding: 7px 0px 7px 0px;
   width: auto; }
-
-.dropdown-item:hover {
-  background: #6f5607;
-  color: #fbefca; }
-
-.dropdown-menu li:hover {
-  background: #6f5607;
-  border-radius: 5px; }
+  .dropdown-item:hover {
+    background: #6f5607;
+    color: #fbefca; }
 
 .dropdown-menu {
   background-color: #9f7b0b;
   margin: 0px;
   padding: 5px 0px 5px 0px;
   min-width: 7rem; }
+  .dropdown-menu li:hover {
+    background: #6f5607;
+    border-radius: 5px; }
 
-/* items del menu */
 nav ul li {
   background-color: #9f7b0b; }
 
-/* enlaces del menu */
 nav ul a {
   text-decoration: none;
   color: #fbefca;
@@ -822,6 +815,10 @@ body {
   background-color: #920b38;
   background-image: url(../images/mosaico_textura.jpg);
   background-repeat: repeat; }
+
+main {
+  margin-top: 80px;
+  margin-bottom: 50px; }
 
 h1 {
   color: #efb810;
