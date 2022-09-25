@@ -56,7 +56,7 @@ main {
     main {
       margin-top: 80px;
       margin-bottom: 130px; } }
-  @media (max-width: 1200px) {
+  @media (min-width: 1024px) and (max-width: 1200px) {
     main {
       margin-top: 100px;
       margin-bottom: 130px; } }
@@ -270,6 +270,9 @@ footer {
   border-radius: 10px 10px 10px 10px;
   overflow: hidden;
   box-shadow: 10px 10px 5px 5px rgba(0, 0, 0, 0.2); }
+  @media (max-width: 480px) {
+    .carousel {
+      margin-top: 10px; } }
 
 .carousel-control-next-icon, .carousel-control-prev-icon {
   background-image: none;
@@ -617,7 +620,8 @@ footer {
     color: #fbefca;
     font-size: 1rem;
     padding-top: 20px;
-    padding-bottom: 20px; }
+    padding-bottom: 20px;
+    text-align: justify; }
 
 #la_eeb, #la_eeb2 {
   width: 100%;
@@ -643,7 +647,7 @@ footer {
   @media (min-width: 767px) and (max-width: 1024px) {
     #video_mascota {
       height: 450px; } }
-  @media (max-width: 1200px) {
+  @media (min-width: 1024px) and (max-width: 1200px) {
     #video_mascota {
       width: 80%;
       height: 500px; } }
@@ -686,17 +690,18 @@ footer {
       height: auto;
       padding-bottom: 10px;
       border-radius: 10px 10px 0px 0px;
+      padding: 0;
       margin-top: 10px; } }
   @media (min-width: 767px) and (max-width: 1024px) {
     .card {
-      width: 100%;
+      width: 84%;
       height: auto;
       border-radius: 10px 10px 0px 0px;
       box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2); } }
-  @media (max-width: 1200px) {
+  @media (min-width: 1024px) and (max-width: 1200px) {
     .card {
       width: 84%;
-      height: 200px;
+      height: auto;
       border-radius: 10px 10px 0px 0px; } }
   .card h3 {
     padding: 10px 0px 5px 0px;
@@ -723,11 +728,11 @@ footer {
         height: auto;
         padding-left: 15px;
         padding-right: 15px; } }
-    @media (max-width: 1200px) {
+    @media (min-width: 1024px) and (max-width: 1200px) {
       .card p {
         padding: 0px 10px 0px 10px;
         width: 100%; } }
-  @media (max-width: 1200px) {
+  @media (min-width: 1024px) and (max-width: 1200px) {
     .card li {
       display: inline;
       margin: 0px 10px 0px 10px; } }
@@ -753,7 +758,7 @@ footer {
     .img_estadio {
       width: 100%;
       border-radius: 0px 0px 10px 10px; } }
-  @media (max-width: 1200px) {
+  @media (min-width: 1024px) and (max-width: 1200px) {
     .img_estadio {
       width: 100%;
       border-radius: 0px 0px 10px 10px; } }

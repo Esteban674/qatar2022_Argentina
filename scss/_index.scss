@@ -9,6 +9,9 @@
     border-radius: 10px 10px 10px 10px;
     overflow: hidden;
     box-shadow: 10px 10px 5px 5px rgba(0, 0, 0, 0.2);
+    @include breakpoint(mobile) {
+        margin-top: 10px;
+    }
 }
 
 

@@ -31,17 +31,18 @@
         height: auto;
         padding-bottom: 10px;
         border-radius: 10px 10px 0px 0px;
+        padding: 0;
         margin-top: 10px;
     }
     @include breakpoint(tablet) {
-        width: 100%;
+        width: 84%;
         height: auto;
         border-radius:10px 10px 0px 0px;
         box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
     }
     @include breakpoint(smallScreen) {
         width: 84%;
-        height: 200px;
+        height: auto;
         border-radius:10px 10px 0px 0px;
     }
     h3{
