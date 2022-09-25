@@ -1,5 +1,6 @@
 /*Background*/
 /*Textos*/
+/* EJEMPLO DE USO */
 /*
 h1 {
     font-size: 24px;
@@ -11,7 +12,7 @@ h1 {
     }
 }
 */
-/* USO */
+/* EJEMPLO DE USO */
 /*
 aside {
     width: 30%;
@@ -22,7 +23,7 @@ aside {
     }
   }
   */
-/* USO */
+/* EJEMPLO DE USO */
 /*
 .elemento {
     @include transition;
@@ -265,6 +266,9 @@ footer {
 .logo_grande {
   margin: 10px;
   height: 14rem; }
+  @media (max-width: 480px) {
+    .logo_grande {
+      height: 10rem; } }
 
 .carousel {
   border-radius: 10px 10px 10px 10px;
@@ -287,6 +291,17 @@ footer {
 
 .contenedor_texto_principal {
   padding: 5px 10px; }
+  @media (max-width: 480px) {
+    .contenedor_texto_principal h1, .contenedor_texto_principal h2, .contenedor_texto_principal h3, .contenedor_texto_principal h4 {
+      font-size: 1.5rem; }
+    .contenedor_texto_principal h2 {
+      font-size: 1.2rem; }
+    .contenedor_texto_principal h3 {
+      font-size: 1.1rem; }
+    .contenedor_texto_principal h4 {
+      font-size: 1rem; }
+    .contenedor_texto_principal p {
+      font-size: 0.9rem; } }
 
 .parrafo_principal {
   color: #fbefca;

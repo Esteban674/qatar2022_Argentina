@@ -1,5 +1,5 @@
 // Responsive mixins
-// Bootstrap breakpoints
+// Bootstrap breakpoints - MOBILE FIRST
 
 @mixin tablet {
     @media only screen and (min-width: 768px) {
@@ -19,7 +19,7 @@
     }
 }
 
-/*
+/* EJEMPLO DE USO */ /*
 h1 {
     font-size: 24px;
     @include tablet {
@@ -31,6 +31,7 @@ h1 {
 }
 */
 
+// Breakpoints - DESKTOP FIRST
 
 $mobile: 480px;
 $tabletPortrait: 767px;
@@ -52,7 +53,7 @@ $desktop: 1200px;
     }
 }
 
-/* USO */ /*
+/* EJEMPLO DE USO */ /*
 aside {
     width: 30%;
     float: right;
@@ -76,7 +77,7 @@ aside {
     }
 }
 
-/* USO */ /*
+/* EJEMPLO DE USO */ /*
 .elemento {
     @include transition;
 }

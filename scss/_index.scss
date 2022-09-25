@@ -3,6 +3,9 @@
 .logo_grande{
     margin: 10px;
     height: 14rem;
+    @include breakpoint(mobile) {
+        height: 10rem;
+    }
 }
 
 .carousel {
@@ -29,6 +32,23 @@
 }
 .contenedor_texto_principal{
     padding: 5px 10px;
+    @include breakpoint(mobile) {
+        h1{
+            font-size: 1.5rem;
+        }
+        h2{
+            font-size: 1.2rem;
+        }
+        h3{
+            font-size: 1.1rem;
+        }
+        h4{
+            font-size: 1rem;
+        }
+        p{
+            font-size: 0.9rem; 
+        }
+    }
 
 }
 .parrafo_principal{
