@@ -1,4 +1,5 @@
 @import "variables";
+@import "mixins";
 @import "general";
 @import "header";
 @import "footer";
@@ -9,7 +10,71 @@
 @import "mascota";
 @import "estadios";
 @import "contacto";
-@import "responsiveMobile";
-@import "responsiveTablet";
-@import "responsiveNotebook";
-@import "responsiveDesktop";
+
+
+
+
+/*MAPS - Ampliando los Margin y Padding de Bootstrap*/
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  1: $spacer * .25,
+  2: $spacer * .5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+  6: $spacer * 4.5,
+  7: $spacer * 6.5,
+  8: $spacer * 7.5,
+  9: $spacer * 10,
+  10: $spacer * 12.5,
+);
+
+$margenes:(
+    0: m,
+    1: mt,
+    2: mb,
+    3: me,
+    4: ms,
+);
+
+/*Padding*/
+$rellenos:(
+    0: p,
+    1: pt,
+    2: pb,
+    3: pe,
+    4: ps,
+);
+
+$margin-propiedad:(
+    0: margin,
+    1: margin-top,
+    2: margin-bottom,
+    3: margin-right,
+    4: margin-left
+);
+
+$padding-propiedad:(
+    0: padding,
+    1: padding-top,
+    2: padding-bottom,
+    3: padding-right,
+    4: padding-left
+);
+
+@for $i from 0 through 4 {
+    @for $j from 0 through 10{
+    .#{map-get($margenes,$i)}-#{$j}{
+        #{map-get($margin-propiedad,$i)}: map-get($spacers , $j );
+    }
+    }
+}
+
+@for $i from 0 through 4 {
+    @for $j from 0 through 10{
+    .#{map-get($rellenos,$i)}-#{$j}{
+        #{map-get($padding-propiedad,$i)}: map-get($spacers , $j );
+    }
+    }
+}

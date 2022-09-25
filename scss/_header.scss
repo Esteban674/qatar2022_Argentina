@@ -17,7 +17,26 @@ header{
         animation-name: carga-texto;
         animation-duration: 2s;
         margin-bottom: 0px;
+		@include breakpoint(mobile) {
+            font-size: 1.5rem;
+            margin-left: 0px;
+            text-align: center;
+		}
     }
+	@include breakpoint(mobile) {
+		display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, auto);
+        justify-items: center;
+        grid-template-areas: "logos logos"
+                             "navmenu titulo" 
+	}
+}
+
+.grupo_logo{
+	@include breakpoint(mobile) {
+		grid-area: logos;
+	}
 }
 
 .logo-qatar{
@@ -35,6 +54,9 @@ header{
 .menu{
     display: flex;
     align-items: center;
+	@include breakpoint(mobile) {
+		grid-area: navmenu;
+	}
 }
 
 .header-fondo-texto{
@@ -44,6 +66,9 @@ header{
     -webkit-text-fill-color: transparent;
     animation-name: carga-texto;
     animation-duration: 2s;
+	@include breakpoint(mobile) {
+		grid-area: titulo;
+	}
 }
 
 /* menu */

@@ -26,17 +26,70 @@
     backdrop-filter: blur(1.5px);
     -webkit-backdrop-filter: blur(1.5px);
     padding: 0 10px;
+    @include breakpoint(mobile) {
+        width: 100%;
+        height: auto;
+        padding-bottom: 10px;
+        border-radius: 10px 10px 0px 0px;
+        margin-top: 10px;
+    }
+    @include breakpoint(tablet) {
+        width: 100%;
+        height: auto;
+        border-radius:10px 10px 0px 0px;
+        box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
+    }
+    @include breakpoint(smallScreen) {
+        width: 84%;
+        height: 200px;
+        border-radius:10px 10px 0px 0px;
+    }
     h3{
         padding: 10px 0px 5px 0px;
         text-align: center;
         font-size: 1.5rem;
+        @include breakpoint(mobile) {
+            padding-top: 10px;
+        }
     }
     h4{
         padding: 20px 0px 10px 0px;
+        @include breakpoint(mobile) {
+            padding: 0px;
+        }
     }
     p{
         padding: 0px 10px 0px 10px;
         text-align: justify;
+        @include breakpoint(mobile) {
+            width: 100%;
+        }
+        @include breakpoint(tablet) {
+            padding: 0px;
+            width: 100%;
+            height: auto;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+        @include breakpoint(smallScreen) {
+            padding: 0px 10px 0px 10px;
+            width: 100%;
+        }
+    }
+    li{
+        @include breakpoint(smallScreen) {
+            display: inline;
+            margin: 0px 10px 0px 10px;
+        }
+        @include breakpoint(tablet) {
+            display: inline;
+            margin: 0px;
+        }
+    }
+    ul{
+        @include breakpoint(tablet) {
+            margin-bottom: 10px;
+        }
     }
 }
 
@@ -45,6 +98,19 @@
     height: 378px;
     border-radius: 0px 10px 10px 0;
     box-shadow: 10px 10px 5px 5px rgba(0, 0, 0, 0.2);
+    @include breakpoint(mobile) {
+        height: 240px;
+        border-radius: 0px 0px 10px 10px;
+        margin-bottom: 15px;
+    }
+    @include breakpoint(tablet) {
+        width: 100%;
+        border-radius: 0px 0px 10px 10px;
+    }
+    @include breakpoint(smallScreen) {
+        width: 100%;
+        border-radius: 0px 0px 10px 10px;
+    }
 }
 
 .card_mas_estadio{
@@ -53,6 +119,10 @@
     align-items: center;
     flex-wrap: wrap;
     margin-top: 25px;
+    @include breakpoint(mobile) {
+        width: 100%;
+        flex-direction: column;
+    }
 }
 
 .descripcion_estadio{
@@ -63,6 +133,11 @@
     margin-top: 15px;
     margin-bottom: 20px;
     text-align: justify;
+    @include breakpoint(mobile) {
+        height: 100%;
+        padding: 0px 10px 0px 10px;
+        margin: auto;  
+    }
 }
 
 /*end-estadios*/

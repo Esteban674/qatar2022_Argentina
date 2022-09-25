@@ -19,6 +19,22 @@ body{
 main{
     margin-top: 80px;
     margin-bottom: 50px;
+    @include breakpoint(mobile) {
+        margin-top: 120px;
+        margin-bottom: 120px;
+    }
+    @include breakpoint(tablet) {
+        margin-top: 80px;
+        margin-bottom: 130px;
+    }
+    @include breakpoint(smallScreen) {
+        margin-top: 100px;
+        margin-bottom: 130px;
+    }
+    @include breakpoint(desktop) {
+        margin-top: 80px;
+        margin-bottom: 80px;
+    }
 }
 
 h1 {
@@ -30,27 +46,18 @@ h1 {
 }
 
 h2 {
-    color: $colorTitulo;
+    @extend h1;
     font-size: 1.5rem;
-    text-align: center;
-    animation-name: carga-texto;
-    animation-duration: 2s;
 }
 
 h3 {
-    color: $colorTitulo;
+    @extend h1;
     font-size: 1.2rem;
-    text-align: center;
-    animation-name: carga-texto;
-    animation-duration: 2s;
 }
 
 h4 {
-    color: $colorTitulo;
+    @extend h1;
     font-size: 1rem;
-    text-align: center;
-    animation-name: carga-texto;
-    animation-duration: 2s;
 }
 
 /*Animaciones*/
