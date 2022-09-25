@@ -53,6 +53,10 @@
 	@include breakpoint(mobile) {
 		height: 20rem;
 		margin:0;
-	  }
+	}
+	@include breakpoint(tablet) {
+		height: 28rem;
+		margin:0;
+	}
 }
 /*end-pelota*/
