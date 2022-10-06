@@ -71,7 +71,8 @@ h1, h2, h3, h4 {
   font-size: 2rem;
   text-align: center;
   animation-name: carga-texto;
-  animation-duration: 2s; }
+  animation-duration: 2s;
+  transition: all 0.2s ease-in-out; }
 
 h2 {
   font-size: 1.5rem; }
@@ -265,7 +266,8 @@ footer {
 /*------ Start Index ------*/
 .logo_grande {
   margin: 10px;
-  height: 14rem; }
+  height: 14rem;
+  transition: all 0.2s ease-in-out; }
   @media (max-width: 480px) {
     .logo_grande {
       height: 10rem; } }
@@ -273,7 +275,8 @@ footer {
 .carousel {
   border-radius: 10px 10px 10px 10px;
   overflow: hidden;
-  box-shadow: 10px 10px 5px 5px rgba(0, 0, 0, 0.2); }
+  box-shadow: 10px 10px 5px 5px rgba(0, 0, 0, 0.2);
+  transition: all 0.2s ease-in-out; }
   @media (max-width: 480px) {
     .carousel {
       margin-top: 10px; } }
@@ -287,7 +290,8 @@ footer {
   width: 100%;
   border-radius: 10px;
   box-shadow: 10px 10px 5px 5px rgba(0, 0, 0, 0.2);
-  margin-bottom: 15px; }
+  margin-bottom: 15px;
+  transition: all 0.2s ease-in-out; }
 
 .contenedor_texto_principal {
   padding: 5px 10px; }
@@ -306,15 +310,17 @@ footer {
 .parrafo_principal {
   color: #fbefca;
   font-size: 1.2rem;
-  text-align: justify;
-  padding: 5px 0px; }
+  text-align: left;
+  padding: 5px 0px;
+  transition: all 0.2s ease-in-out; }
 
 .contenedor_spotify {
   grid-area: spotify;
   padding-top: 15px;
   width: 100%;
   height: 80;
-  text-align: center; }
+  text-align: center;
+  transition: all 0.2s ease-in-out; }
 
 #spotify {
   margin-top: 10px;
@@ -332,7 +338,8 @@ footer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: repeat(3, auto);
-  justify-items: center; }
+  justify-items: center;
+  transition: all 0.2s ease-in-out; }
   @media (max-width: 480px) {
     #contenedor_fixture {
       grid-template-columns: 1fr;
@@ -352,7 +359,8 @@ footer {
     background: linear-gradient(135deg, rgba(0, 0, 0, 0.1), rgba(255, 255, 255, 0));
     transform: scale(1.05);
     backdrop-filter: blur(1.9px);
-    -webkit-backdrop-filter: blur(1.5px); }
+    -webkit-backdrop-filter: blur(1.5px);
+    transition: all 0.2s ease-in-out; }
 
 #fix_a {
   grid-column: 1/2;
@@ -541,7 +549,8 @@ footer {
   justify-content: center;
   flex-wrap: wrap;
   margin-top: 10px;
-  width: 80%; }
+  width: 80%;
+  transition: all 0.2s ease-in-out; }
 
 .card_jugador {
   display: flex;
@@ -558,7 +567,8 @@ footer {
   box-shadow: 10px 10px 5px 5px rgba(0, 0, 0, 0.2);
   backdrop-filter: blur(1.5px);
   -webkit-backdrop-filter: blur(1.5px);
-  background: linear-gradient(135deg, rgba(0, 0, 0, 0.2), rgba(255, 255, 255, 0)); }
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.2), rgba(255, 255, 255, 0));
+  transition: all 0.2s ease-in-out; }
   .card_jugador p {
     margin: 0px; }
   .card_jugador:hover {
@@ -566,7 +576,8 @@ footer {
     background: linear-gradient(135deg, rgba(0, 0, 0, 0.1), rgba(255, 255, 255, 0));
     transform: scale(1.05);
     backdrop-filter: blur(1.9px);
-    -webkit-backdrop-filter: blur(1.5px); }
+    -webkit-backdrop-filter: blur(1.5px);
+    transition: all 0.2s ease-in-out; }
 
 .img_jugador {
   width: 250px;
@@ -586,26 +597,25 @@ footer {
 
 /*end-nuestra_seleccion*/
 /*------ start-pelota ------*/
-#main_pelota p {
-  color: #fbefca;
-  font-size: 1rem; }
-
-#main_pelota h2 {
-  margin-top: 20px; }
-
-#main_pelota h3 {
-  margin-top: 30px;
-  padding-bottom: 10px; }
-
-#main_pelota ul {
-  margin-bottom: 25px;
-  padding: 10px;
-  margin: 10px; }
-  #main_pelota ul li {
-    width: 100%;
+#main_pelota {
+  transition: all 1s ease-in-out; }
+  #main_pelota p {
     color: #fbefca;
-    font-size: 1rem;
-    padding-top: 15px; }
+    font-size: 1rem; }
+  #main_pelota h2 {
+    margin-top: 20px; }
+  #main_pelota h3 {
+    margin-top: 30px;
+    padding-bottom: 10px; }
+  #main_pelota ul {
+    margin-bottom: 25px;
+    padding: 10px;
+    margin: 10px; }
+    #main_pelota ul li {
+      width: 100%;
+      color: #fbefca;
+      font-size: 1rem;
+      padding-top: 15px; }
 
 #main_pelota_caracteristicas {
   margin: 20px;
@@ -640,19 +650,22 @@ footer {
     font-size: 1rem;
     padding-top: 20px;
     padding-bottom: 20px;
-    text-align: justify; }
+    text-align: left; }
 
 #la_eeb, #la_eeb2 {
   width: 100%;
   border-radius: 10px;
-  box-shadow: 10px 10px 5px 5px rgba(0, 0, 0, 0.2); }
+  box-shadow: 10px 10px 5px 5px rgba(0, 0, 0, 0.2);
+  transition: all 0.2s ease-in-out; }
   @media (min-width: 1200px) {
     #la_eeb, #la_eeb2 {
       width: 90%; } }
 
-@media (min-width: 1200px) {
-  #la_eeb2 {
-    width: 90%; } }
+#la_eeb2 {
+  transition: all 0.2s ease-in-out; }
+  @media (min-width: 1200px) {
+    #la_eeb2 {
+      width: 90%; } }
 
 #video_mascota {
   margin-top: 10px;
@@ -684,7 +697,8 @@ footer {
   align-items: center;
   padding-bottom: 80px;
   padding-top: 10px;
-  width: 100%; }
+  width: 100%;
+  transition: all 0.2s ease-in-out; }
 
 .card {
   display: flex;
@@ -702,7 +716,8 @@ footer {
   box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
   backdrop-filter: blur(1.5px);
   -webkit-backdrop-filter: blur(1.5px);
-  padding: 0 10px; }
+  padding: 0 10px;
+  transition: all 0.2s ease-in-out; }
   @media (max-width: 480px) {
     .card {
       width: 100%;
@@ -736,7 +751,7 @@ footer {
         padding: 0px; } }
   .card p {
     padding: 0px 10px 0px 10px;
-    text-align: justify; }
+    text-align: left; }
     @media (max-width: 480px) {
       .card p {
         width: 100%; } }
@@ -767,7 +782,8 @@ footer {
   width: 100%;
   height: 378px;
   border-radius: 0px 10px 10px 0;
-  box-shadow: 10px 10px 5px 5px rgba(0, 0, 0, 0.2); }
+  box-shadow: 10px 10px 5px 5px rgba(0, 0, 0, 0.2);
+  transition: all 0.2s ease-in-out; }
   @media (max-width: 480px) {
     .img_estadio {
       height: 240px;
@@ -787,7 +803,8 @@ footer {
   flex-direction: row;
   align-items: center;
   flex-wrap: wrap;
-  margin-top: 25px; }
+  margin-top: 30px;
+  transition: all 0.2s ease-in-out; }
   @media (max-width: 480px) {
     .card_mas_estadio {
       width: 100%;
@@ -799,8 +816,8 @@ footer {
   color: #fbefca;
   font-size: 0.9rem;
   margin-top: 15px;
-  margin-bottom: 20px;
-  text-align: justify; }
+  margin-bottom: 4rem;
+  text-align: left; }
   @media (max-width: 480px) {
     .descripcion_estadio {
       height: 100%;
