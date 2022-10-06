@@ -19,6 +19,7 @@
         grid-template-columns: 1fr 1fr;
         grid-template-rows: repeat(6, auto);
     }
+    transition: all 0.2s ease-in-out;
 }
 
 .fixture{
@@ -32,6 +33,7 @@
         transform: scale(1.05);
         backdrop-filter: blur(1.9px);
         -webkit-backdrop-filter: blur(1.5px);
+        transition: all 0.2s ease-in-out;
     }
 }
 

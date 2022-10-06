@@ -47,6 +47,7 @@
     flex-wrap: wrap;
     margin-top: 10px;
     width: 80%;
+    transition: all 0.2s ease-in-out;
 }
 
 .card_jugador{
@@ -74,7 +75,9 @@
         transform: scale(1.05);
         backdrop-filter: blur(1.9px);
         -webkit-backdrop-filter: blur(1.5px);
+        transition: all 0.2s ease-in-out;
     }
+    transition: all 0.2s ease-in-out;
 }
 
 .img_jugador{

@@ -19,6 +19,7 @@
     @include breakpoint(desktop) {
         width: 90%;
     }
+    transition: all 0.2s ease-in-out;
 }
 
 #la_eeb2{
@@ -26,6 +27,7 @@
     @include breakpoint(desktop) {
         width: 90%;
     }
+    transition: all 0.2s ease-in-out;
 }
 
 #video_mascota{

@@ -43,6 +43,7 @@ h1 {
     text-align: center;
     animation-name: carga-texto;
     animation-duration: 2s;
+    transition: all 0.2s ease-in-out;
 }
 
 h2 {
