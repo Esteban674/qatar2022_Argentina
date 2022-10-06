@@ -9,6 +9,10 @@
         padding-top: 20px;
         padding-bottom: 20px;
         text-align: left;
+        @include breakpoint(desktop) {
+            width: 90%;
+            padding-left: 120px;
+        }
     }
 }
 
@@ -17,7 +21,7 @@
     border-radius:10px;
     box-shadow: 10px 10px 5px 5px rgba(0, 0, 0, 0.2);
     @include breakpoint(desktop) {
-        width: 90%;
+        width: 80%;
     }
     transition: all 0.2s ease-in-out;
 }
@@ -25,7 +29,7 @@
 #la_eeb2{
     @extend #la_eeb;
     @include breakpoint(desktop) {
-        width: 90%;
+        width: 80%;
     }
     transition: all 0.2s ease-in-out;
 }

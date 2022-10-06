@@ -45,6 +45,7 @@ header{
     animation-name: animacionLogo;
     animation-duration: 5s;
     animation-iteration-count: infinite;
+	transition: all 0.2s ease-in-out;
 }
 
 .logo-fifa{
@@ -66,6 +67,7 @@ header{
     -webkit-text-fill-color: transparent;
     animation-name: carga-texto;
     animation-duration: 2s;
+	transition: all 0.2s ease-in-out;
 	@include breakpoint(mobile) {
 		grid-area: titulo;
 	}
@@ -91,12 +93,14 @@ header{
 	&:hover {
 		background: $colorSecundario;
 		border-radius: 5px;
+		text-shadow: 0px 0px 9px rgba(255, 255, 255, 0.7);
 	}
 }
 .nav-link.active {
 	&:hover {
 		color: $colorTexto;
 	}
+	font-weight: 600;
 }
 .dropdown-item {
 	color: $colorTexto;

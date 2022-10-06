@@ -144,7 +144,8 @@ header {
   margin-left: 10px;
   animation-name: animacionLogo;
   animation-duration: 5s;
-  animation-iteration-count: infinite; }
+  animation-iteration-count: infinite;
+  transition: all 0.2s ease-in-out; }
 
 .logo-fifa {
   width: 150px; }
@@ -162,7 +163,8 @@ header {
   background-size: 36% 108%;
   -webkit-text-fill-color: transparent;
   animation-name: carga-texto;
-  animation-duration: 2s; }
+  animation-duration: 2s;
+  transition: all 0.2s ease-in-out; }
   @media (max-width: 480px) {
     .header-fondo-texto {
       grid-area: titulo; } }
@@ -183,10 +185,13 @@ header {
 
 .nav-item:hover {
   background: #6f5607;
-  border-radius: 5px; }
+  border-radius: 5px;
+  text-shadow: 0px 0px 9px rgba(255, 255, 255, 0.7); }
 
-.nav-link.active:hover {
-  color: #fbefca; }
+.nav-link.active {
+  font-weight: 600; }
+  .nav-link.active:hover {
+    color: #fbefca; }
 
 .dropdown-item {
   color: #fbefca;
@@ -651,6 +656,10 @@ footer {
     padding-top: 20px;
     padding-bottom: 20px;
     text-align: left; }
+    @media (min-width: 1200px) {
+      #main_mascota p {
+        width: 90%;
+        padding-left: 120px; } }
 
 #la_eeb, #la_eeb2 {
   width: 100%;
@@ -659,13 +668,13 @@ footer {
   transition: all 0.2s ease-in-out; }
   @media (min-width: 1200px) {
     #la_eeb, #la_eeb2 {
-      width: 90%; } }
+      width: 80%; } }
 
 #la_eeb2 {
   transition: all 0.2s ease-in-out; }
   @media (min-width: 1200px) {
     #la_eeb2 {
-      width: 90%; } }
+      width: 80%; } }
 
 #video_mascota {
   margin-top: 10px;
