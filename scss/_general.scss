@@ -61,6 +61,12 @@ h4 {
     font-size: 1rem;
 }
 
+p,li{
+    span{
+        color: $colorEnfasis;
+    }
+}
+
 /*Animaciones*/
 @keyframes carga-texto{
     0% {
