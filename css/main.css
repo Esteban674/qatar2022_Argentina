@@ -230,7 +230,7 @@ nav ul a {
 /*footer*/
 footer {
   grid-area: footer;
-  position: fixed;
+  position: relative;
   bottom: 0;
   width: 100%;
   background-color: #9f7b0b;
@@ -287,6 +287,8 @@ footer {
   border-radius: 10px 10px 10px 10px;
   overflow: hidden;
   box-shadow: 10px 10px 5px 5px rgba(0, 0, 0, 0.2);
+  margin-top: 1rem;
+  margin-bottom: 2rem;
   transition: all 0.2s ease-in-out; }
   @media (max-width: 480px) {
     .carousel {
@@ -350,6 +352,7 @@ footer {
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: repeat(3, auto);
   justify-items: center;
+  margin-bottom: 3rem;
   transition: all 0.2s ease-in-out; }
   @media (max-width: 480px) {
     #contenedor_fixture {
@@ -859,6 +862,10 @@ form h3 {
   text-align: left;
   margin-top: 15px;
   margin-bottom: 10px; }
+
+@media (min-width: 1200px) {
+  form {
+    padding-bottom: 15rem; } }
 
 .btn:hover {
   font-size: 1.1rem; }

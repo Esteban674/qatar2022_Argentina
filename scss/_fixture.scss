@@ -11,6 +11,7 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: repeat(3, auto);
     justify-items: center;
+    margin-bottom: 3rem;
     @include breakpoint(mobile) {
         grid-template-columns: 1fr;
         grid-template-rows: repeat(12, auto);
